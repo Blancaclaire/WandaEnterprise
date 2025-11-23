@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  font-weight: medium;
+}
+
+.headerMobile {
+  height: 60px;
+  background-color: rgb(66, 48, 230);
+  margin: 20px;
+}
+.headerMobile__logo {
+  float: left;
+  display: inline;
+}
+.headerMobile__logo--reduced {
+  width: 33px;
+}
+.headerMobile__nav {
+  display: inline;
+  float: right;
+}
+.headerMobile__nav-button {
+  background: transparent;
+  border: none;
+  display: block;
+  width: 30px;
+  height: 25px;
+  position: relative;
+}
+.headerMobile__nav-line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  margin-bottom: 5px;
+  transition: 0.3s;
+}
+.headerMobile__nav-line:last-child {
+  margin-bottom: 0;
+}
+.headerMobile__nav-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+}
+.headerMobile__nav-menu--hidden {
+  display: none;
+}
+.headerMobile__nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.headerMobile__nav-item a {
+  display: block;
+  padding: 15px 20px;
+  color: #333;
+  text-decoration: none;
+}
+.headerMobile__nav-item a:hover {
+  background-color: #f0f0f0;
+}
+
+.headerDesktop {
+  display: none;
+}
+
+@media (min-width: 400px) {
+  .headerMobile {
+    display: none;
+  }
+  .headerDesktop {
+    display: flex;
+    background-color: red;
+  }
+}
+/*# sourceMappingURL=main.css.map */
