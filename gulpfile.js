@@ -3,7 +3,6 @@ const sass = require('gulp-sass')(require('sass'));
 const sourcemaps = require('gulp-sourcemaps');
 
 
-// Tarea para compilar Sass correctamente
 gulp.task('sass', function () {
     return gulp.src('styles/main.scss')
         .pipe(sourcemaps.init())
