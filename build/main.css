@@ -73,13 +73,78 @@
   display: none;
 }
 
+body {
+  background-color: red;
+}
+
 @media (min-width: 400px) {
   .headerMobile {
     display: none;
   }
   .headerDesktop {
     display: flex;
-    background-color: red;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    min-width: fit-content;
+    background-color: green;
+    padding: 0 2em;
+  }
+  .headerDesktop__logo img {
+    width: 10em;
+  }
+  .headerDesktop__nav {
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+  .headerDesktop__nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    gap: 2em;
+  }
+  .headerDesktop__nav-item--left + .headerDesktop__nav-item--right {
+    margin-left: auto;
+  }
+  .headerDesktop__nav-item--left {
+    margin-left: 2em;
+  }
+  .headerDesktop__nav-item--left a {
+    display: block;
+    padding: 15px 20px;
+    color: #f8f7f7;
+    text-decoration: none;
+    transition: transform 0.2s;
+  }
+  .headerDesktop__nav-item--left a:hover {
+    transform: scale(1.05);
+  }
+  .headerDesktop__nav-item--right a {
+    display: block;
+    padding: 15px 20px;
+    color: #f8f7f7;
+    text-decoration: none;
+    transition: transform 0.2s;
+  }
+  .headerDesktop__nav-item--right a:hover {
+    transform: scale(1.05);
+  }
+  .headerDesktop__nav-item--right:last-child a {
+    background-color: #fdd835;
+    color: #333;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: transform 0.2s;
+  }
+  .headerDesktop__nav-item--right:last-child a:hover {
+    background-color: #fbc02d;
+    transform: scale(1.05);
   }
 }
 /*# sourceMappingURL=main.css.map */
