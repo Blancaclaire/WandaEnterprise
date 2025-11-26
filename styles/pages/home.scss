@@ -1,7 +1,10 @@
-.hero{
-    background-image: url(../images/ImagenPrincipal.png);
+.hero {
+    background-image: url(../images/ImagenPrincipal2.jpg);
     background-size: cover;
     background-position: center;
-    height: 500px;
-    position: absolute;
+    min-height: 100vh;
+    position: relative;
+    margin-top: -100px;
+    padding-top: 60px;
 }
+

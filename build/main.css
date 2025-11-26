@@ -9,6 +9,8 @@
 
 header {
   position: relative;
+  z-index: 100;
+  background-color: transparent;
 }
 
 .headerMobile {
@@ -88,9 +90,10 @@ header {
     width: 100%;
     min-width: fit-content;
     padding: 0 2em;
-  }
-  .headerDesktop__logo img {
-    width: 10em;
+    background-color: transparent;
+    position: relative;
+    z-index: 10 .headerDesktop __logo img;
+    z-index-width: 10em;
   }
   .headerDesktop__nav {
     display: flex;
@@ -146,10 +149,12 @@ header {
   }
 }
 .hero {
-  background-image: url(../images/ImagenPrincipal.png);
+  background-image: url(../images/ImagenPrincipal2.jpg);
   background-size: cover;
   background-position: center;
-  height: 500px;
-  position: absolute;
+  min-height: 100vh;
+  position: relative;
+  margin-top: -100px;
+  padding-top: 60px;
 }
 /*# sourceMappingURL=main.css.map */
