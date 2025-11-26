@@ -7,9 +7,12 @@
   font-weight: medium;
 }
 
+header {
+  position: relative;
+}
+
 .headerMobile {
   height: 60px;
-  background-color: rgb(66, 48, 230);
   margin: 20px;
 }
 .headerMobile__logo {
@@ -73,10 +76,6 @@
   display: none;
 }
 
-body {
-  background-color: red;
-}
-
 @media (min-width: 400px) {
   .headerMobile {
     display: none;
@@ -88,7 +87,6 @@ body {
     height: 100px;
     width: 100%;
     min-width: fit-content;
-    background-color: green;
     padding: 0 2em;
   }
   .headerDesktop__logo img {
@@ -146,5 +144,12 @@ body {
     background-color: #fbc02d;
     transform: scale(1.05);
   }
+}
+.hero {
+  background-image: url(../images/ImagenPrincipal.png);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  position: absolute;
 }
 /*# sourceMappingURL=main.css.map */
