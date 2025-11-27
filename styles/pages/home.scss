@@ -38,24 +38,64 @@ font-family: "Inter", sans-serif;
 }
 
 
-@media (min-width: 700px) {
+@media (min-width: 1023px) {
 
 .hero{
 
 
     &__card{
-        display:flex;
-        height: 70vh;
+        display:block;
         width: 100%;
-        border: solid 2px rgb(12, 230, 95);
-        position: absolute;
-        padding: 0 50px;
-        justify-content: space-between;
+        padding: 0 15em;
+        position: relative;
+        justify-content: center;
+        
 
+        h2{
+            
+            // width: 10em;
+            line-height: 1.3em;
+            font-size: 3.9vh;
+
+        }
         img{
-            height: 40vh;
+            width: 15em;
+        }
+        
+        &--right{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            position: absolute;
+            gap: 2.5em;
+            top: 20em;
+
+            h2{
+                text-align: right;
+                color:#EAE2FA;
+                width: 10em;
+            }
+        
+        }
+
+        &--left{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            position: absolute;
+            top: 23em;
+            gap: 2.5em;
+             h2{
+                width: 8em;
+
+                color:#E9D7D7;
+            }
+    
             
         }
+        
+
+     
         
 
     }
