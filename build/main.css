@@ -231,6 +231,12 @@ h4 {
     gap: 2.5vh;
     top: 30vh;
   }
+  .hero__card--right img {
+    transition: transform 0.3s;
+  }
+  .hero__card--right img:hover {
+    transform: scale(1.05);
+  }
   .hero__card--right h2 {
     text-align: right;
     color: #EAE2FA;
@@ -243,6 +249,12 @@ h4 {
     position: absolute;
     top: 32vh;
     gap: 2.5vh;
+  }
+  .hero__card--left img {
+    transition: transform 0.3s;
+  }
+  .hero__card--left img:hover {
+    transform: scale(1.05);
   }
   .hero__card--left h2 {
     width: 8em;

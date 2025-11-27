@@ -63,7 +63,7 @@ h4 {
 
     .hero {
         &__bt {
-           
+
             margin-top: 65vh;
 
         }
@@ -86,6 +86,8 @@ h4 {
 
             img {
                 width: 15vw;
+
+
             }
 
             &--right {
@@ -95,6 +97,13 @@ h4 {
                 position: absolute;
                 gap: 2.5vh;
                 top: 30vh;
+                img {
+                   
+                    transition: transform 0.3s; 
+                    &:hover {
+                        transform: scale(1.05);
+                    }
+                }
 
                 h2 {
                     text-align: right;
@@ -111,6 +120,13 @@ h4 {
                 position: absolute;
                 top: 32vh;
                 gap: 2.5vh;
+                img {
+                    // La imagen ya tiene width: 15vw; del padre
+                    transition: transform 0.3s; // Añadir transición para suavizar
+                    &:hover {
+                        transform: scale(1.05);
+                    }
+                }
 
                 h2 {
                     width: 8em;
