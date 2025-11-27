@@ -208,14 +208,14 @@ h4 {
 
 @media (min-width: 1023px) {
   .hero__bt {
-    margin-top: 5vh;
+    margin-top: 1vh;
   }
   .hero__card {
     display: block;
     width: 100%;
-    padding: 0 14vh;
     position: relative;
     justify-content: center;
+    padding: 7vh 13vw 0;
   }
   .hero__card::after {
     content: "";
