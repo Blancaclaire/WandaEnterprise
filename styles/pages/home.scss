@@ -1,7 +1,14 @@
+@use '../components/buttons.scss' as *;
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-h1,h2,h3,h4{
-font-family: "Inter", sans-serif;
+
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Inter", sans-serif;
 }
 
 .hero {
@@ -12,18 +19,19 @@ font-family: "Inter", sans-serif;
     position: relative;
     margin-top: -100px;
     padding-top: 60px;
-    
+    align-items: center;
 
-    &__title{
+    &__title {
         color: rgb(253, 253, 253);
         text-align: center;
         margin-top: 7vh;
 
-        &-principal{
-            font-size:6vh;
-            
+        &-principal {
+            font-size: 6vh;
+
         }
-        &-secondary{
+
+        &-secondary {
             padding: 1% 20%;
             font-size: 1.8vh;
             font-weight: 200;
@@ -32,8 +40,20 @@ font-family: "Inter", sans-serif;
         }
     }
 
+    &__bt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 45vh;
 
-    &__card{
+        button {
+            @include estilo-boton-resaltado;
+        }
+
+    }
+
+
+    &__card {
         display: none;
     }
 }
@@ -41,65 +61,69 @@ font-family: "Inter", sans-serif;
 
 @media (min-width: 1023px) {
 
-.hero{
-
-
-    &__card{
-        display:block;
-        width: 100%;
-        padding: 0 14vh;
-        position: relative;
-        justify-content: center;
-        
-
-        h2{
-            
-            // width: 10em;
-            line-height: 1.3em;
-            font-size: 3.9vh;
+    .hero {
+        &__bt {
+           
+            margin-top: 65vh;
 
         }
-        img{
-            width: 15vw;
-        }
-        
-        &--right{
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            position: absolute;
-            gap: 2.5vh;
-            top: 30vh;
 
-            h2{
-                text-align: right;
-                color:#EAE2FA;
-                width: 10em;
+        &__card {
+            display: block;
+            width: 100%;
+            padding: 0 14vh;
+            position: relative;
+            justify-content: center;
+
+
+            h2 {
+
+                // width: 10em;
+                line-height: 1.3em;
+                font-size: 3.9vh;
+
             }
-        
-        }
 
-        &--left{
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            position: absolute;
-            top: 32vh;
-            gap: 2.5vh;
-             h2{
-                width: 8em;
-
-                color:#E9D7D7;
+            img {
+                width: 15vw;
             }
-    
-            
+
+            &--right {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                position: absolute;
+                gap: 2.5vh;
+                top: 30vh;
+
+                h2 {
+                    text-align: right;
+                    color: #EAE2FA;
+                    width: 10em;
+                }
+
+            }
+
+            &--left {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                position: absolute;
+                top: 32vh;
+                gap: 2.5vh;
+
+                h2 {
+                    width: 8em;
+
+                    color: #E9D7D7;
+                }
+
+
+            }
+
+
+
         }
-        
-
-     
-        
-
     }
-}
 
 }

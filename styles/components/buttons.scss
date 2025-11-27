@@ -1,0 +1,14 @@
+@mixin estilo-boton-resaltado {
+    border: none; 
+    cursor: pointer; 
+    background-color: #353535; 
+    color: #ffffff;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-weight: bold;
+    &:hover {
+        background-color: #fbc02d;
+        transform: scale(1.05);
+    }
+
+}
