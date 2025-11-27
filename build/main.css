@@ -167,14 +167,14 @@ h1, h2, h3, h4 {
 .hero__title {
   color: rgb(253, 253, 253);
   text-align: center;
-  margin-top: 9vh;
+  margin-top: 7vh;
 }
 .hero__title-principal {
-  font-size: 5vh;
+  font-size: 6vh;
 }
 .hero__title-secondary {
-  padding: 1% 10%;
-  font-size: 1.5vh;
+  padding: 1% 20%;
+  font-size: 1.8vh;
   font-weight: 200;
   line-height: 2.5vh;
 }
@@ -186,7 +186,7 @@ h1, h2, h3, h4 {
   .hero__card {
     display: block;
     width: 100%;
-    padding: 0 15em;
+    padding: 0 14vh;
     position: relative;
     justify-content: center;
   }
@@ -195,15 +195,15 @@ h1, h2, h3, h4 {
     font-size: 3.9vh;
   }
   .hero__card img {
-    width: 15em;
+    width: 15vw;
   }
   .hero__card--right {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     position: absolute;
-    gap: 2.5em;
-    top: 20em;
+    gap: 2.5vh;
+    top: 30vh;
   }
   .hero__card--right h2 {
     text-align: right;
@@ -215,8 +215,8 @@ h1, h2, h3, h4 {
     flex-direction: column;
     align-items: flex-start;
     position: absolute;
-    top: 23em;
-    gap: 2.5em;
+    top: 32vh;
+    gap: 2.5vh;
   }
   .hero__card--left h2 {
     width: 8em;

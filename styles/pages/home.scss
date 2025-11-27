@@ -17,17 +17,18 @@ font-family: "Inter", sans-serif;
     &__title{
         color: rgb(253, 253, 253);
         text-align: center;
-        margin-top: 9vh;
+        margin-top: 7vh;
 
         &-principal{
-            font-size:5vh;
+            font-size:6vh;
             
         }
         &-secondary{
-            padding: 1% 10%;
-            font-size: 1.5vh;
+            padding: 1% 20%;
+            font-size: 1.8vh;
             font-weight: 200;
             line-height: 2.5vh;
+
         }
     }
 
@@ -46,7 +47,7 @@ font-family: "Inter", sans-serif;
     &__card{
         display:block;
         width: 100%;
-        padding: 0 15em;
+        padding: 0 14vh;
         position: relative;
         justify-content: center;
         
@@ -59,7 +60,7 @@ font-family: "Inter", sans-serif;
 
         }
         img{
-            width: 15em;
+            width: 15vw;
         }
         
         &--right{
@@ -67,8 +68,8 @@ font-family: "Inter", sans-serif;
             flex-direction: column;
             align-items: flex-end;
             position: absolute;
-            gap: 2.5em;
-            top: 20em;
+            gap: 2.5vh;
+            top: 30vh;
 
             h2{
                 text-align: right;
@@ -83,8 +84,8 @@ font-family: "Inter", sans-serif;
             flex-direction: column;
             align-items: flex-start;
             position: absolute;
-            top: 23em;
-            gap: 2.5em;
+            top: 32vh;
+            gap: 2.5vh;
              h2{
                 width: 8em;
 
