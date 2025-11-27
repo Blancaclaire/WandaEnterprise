@@ -151,6 +151,10 @@ header {
     transform: scale(1.05);
   }
 }
+body {
+  background-color: #EAE6E6;
+}
+
 .hero {
   background-image: url(../images/ImagenPrincipal2.jpg);
   background-size: cover;
@@ -195,7 +199,7 @@ header {
 }
 .hero__bt button:hover {
   background-color: #fbc02d;
-  transform: scale(1.05);
+  transform: scale(1.07);
 }
 .hero__card {
   display: none;
@@ -210,20 +214,23 @@ header {
 .benefits__card {
   display: flex;
   margin: 4em 1em;
-  gap: 20px;
+  gap: 15px;
 }
 .benefits__card img {
   width: 10em;
 }
-.benefits__card-second {
-  flex-direction: row-reverse;
+.benefits__card-text p {
+  font-size: 14px;
 }
-.benefits__card-second-text {
+.benefits__card-text--reverse {
   align-items: center;
   text-align: right;
 }
+.benefits__card--reverse {
+  flex-direction: row-reverse;
+}
 
-@media (min-width: 1023px) {
+@media (min-width: 1024px) {
   .hero__bt {
     margin-top: 1vh;
   }
@@ -271,6 +278,36 @@ header {
     width: 8em;
     color: #E9D7D7;
     margin-bottom: 2vh;
+  }
+  .benefits {
+    margin-top: 6vh;
+  }
+  .benefits__title {
+    display: block;
+    color: #353535;
+    text-align: center;
+    width: 50vw;
+    margin: 0 auto;
+  }
+  .benefits__title h1 {
+    font-size: 4.5vh;
+  }
+  .benefits__card {
+    margin: 4em 15em;
+    gap: 50px;
+  }
+  .benefits__card img {
+    width: 15em;
+  }
+  .benefits__card-text {
+    width: 35vw;
+  }
+  .benefits__card-text p {
+    padding-top: 4vh;
+    font-size: 17px;
+  }
+  .benefits__card-text h3 {
+    font-size: 25px;
   }
 }
 /*# sourceMappingURL=main.css.map */
