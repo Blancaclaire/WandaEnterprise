@@ -1,9 +1,9 @@
 header {
-    // O la clase que uses, ej: .main-header
+
     position: relative;
-    z-index: 100; // IMPRESCINDIBLE: Para que el menú quede ENCIMA de la chica/fondo
-    background-color: transparent; // Para ver el fondo del hero detrás
-    // No necesitas tocar nada más, mantendrá su flujo normal
+    z-index: 100; 
+    background-color: transparent; 
+  
 }
 
 .headerMobile {
@@ -87,7 +87,7 @@ header {
 }
 
 
-@media (min-width: 400px) {
+@media (min-width: 1000px) {
 
     .headerMobile {
         display: none;

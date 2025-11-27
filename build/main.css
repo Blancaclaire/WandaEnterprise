@@ -79,7 +79,7 @@ header {
   display: none;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 1000px) {
   .headerMobile {
     display: none;
   }
@@ -177,5 +177,23 @@ h1, h2, h3, h4 {
   font-size: 1.5vh;
   font-weight: 200;
   line-height: 2.5vh;
+}
+.hero__card {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  .hero__card {
+    display: flex;
+    height: 70vh;
+    width: 100%;
+    border: solid 2px rgb(12, 230, 95);
+    position: absolute;
+    padding: 0 50px;
+    justify-content: space-between;
+  }
+  .hero__card img {
+    height: 40vh;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -30,11 +30,35 @@ font-family: "Inter", sans-serif;
             line-height: 2.5vh;
         }
     }
+
+
+    &__card{
+        display: none;
+    }
 }
 
 
-@media (min-width: 400px) {
+@media (min-width: 700px) {
+
+.hero{
 
 
+    &__card{
+        display:flex;
+        height: 70vh;
+        width: 100%;
+        border: solid 2px rgb(12, 230, 95);
+        position: absolute;
+        padding: 0 50px;
+        justify-content: space-between;
+
+        img{
+            height: 40vh;
+            
+        }
+        
+
+    }
+}
 
 }
