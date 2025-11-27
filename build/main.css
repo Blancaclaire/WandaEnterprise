@@ -151,13 +151,6 @@ header {
     transform: scale(1.05);
   }
 }
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Inter", sans-serif;
-}
-
 .hero {
   background-image: url(../images/ImagenPrincipal2.jpg);
   background-size: cover;
@@ -175,12 +168,14 @@ h4 {
 }
 .hero__title-principal {
   font-size: 6vh;
+  font-family: "Inter", sans-serif;
 }
 .hero__title-secondary {
   padding: 5px 7%;
   font-size: 1.8vh;
   font-weight: 200;
   line-height: 2.5vh;
+  font-family: "Inter", sans-serif;
 }
 .hero__bt {
   display: flex;
@@ -206,6 +201,28 @@ h4 {
   display: none;
 }
 
+.benefits {
+  margin-top: 10vh;
+}
+.benefits__title {
+  display: none;
+}
+.benefits__card {
+  display: flex;
+  margin: 4em 1em;
+  gap: 20px;
+}
+.benefits__card img {
+  width: 10em;
+}
+.benefits__card-second {
+  flex-direction: row-reverse;
+}
+.benefits__card-second-text {
+  align-items: center;
+  text-align: right;
+}
+
 @media (min-width: 1023px) {
   .hero__bt {
     margin-top: 1vh;
@@ -225,6 +242,7 @@ h4 {
   .hero__card h2 {
     line-height: 1.3em;
     font-size: 3.9vh;
+    font-family: "Inter", sans-serif;
   }
   .hero__card img {
     width: 15vw;
@@ -244,6 +262,7 @@ h4 {
     color: #EAE2FA;
     width: 10em;
     margin-bottom: 2vh;
+    font-family: "Inter", sans-serif;
   }
   .hero__card--left {
     float: left;

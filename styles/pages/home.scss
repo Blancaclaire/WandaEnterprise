@@ -1,15 +1,7 @@
-@use '../components/buttons.scss' as *;
+@use '../base/mixins.scss' as *;
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-
-
-h1,
-h2,
-h3,
-h4 {
-    font-family: "Inter", sans-serif;
-}
 
 .hero {
     background-image: url(../images/ImagenPrincipal2.jpg);
@@ -21,7 +13,7 @@ h4 {
     padding-top: 60px;
     align-items: center;
 
-   
+
     &__title {
         color: rgb(253, 253, 253);
         text-align: center;
@@ -29,6 +21,7 @@ h4 {
 
         &-principal {
             font-size: 6vh;
+            font-family: "Inter", sans-serif;
 
         }
 
@@ -37,6 +30,7 @@ h4 {
             font-size: 1.8vh;
             font-weight: 200;
             line-height: 2.5vh;
+            font-family: "Inter", sans-serif;
 
         }
     }
@@ -46,6 +40,7 @@ h4 {
         flex-direction: column;
         align-items: center;
         margin-top: 45vh;
+
         button {
             @include estilo-boton-resaltado;
         }
@@ -58,42 +53,73 @@ h4 {
     }
 }
 
+.benefits {
+
+    margin-top: 10vh;
+
+    &__title {
+        display: none;
+    }
+
+    &__card {
+        display: flex;
+        margin: 4em 1em;
+        // border: solid red;
+        gap: 20px;
+
+        img {
+            width: 10em;
+        }
+
+        &-second {
+            flex-direction: row-reverse;
+
+            &-text {
+                align-items: center;
+                text-align: right;
+            }
+
+        }
+
+    }
+}
 
 
-@media  (min-width: 1023px) {
+@media (min-width: 1023px) {
 
     .hero {
 
         &__bt {
-       
-            margin-top: 1vh; 
+
+            margin-top: 1vh;
         }
 
         &__card {
             display: block;
             width: 100%;
-            // padding: 0 14vh;
             position: relative;
             justify-content: center;
-            padding: 7vh 13vw 0 ;
-        
+            padding: 7vh 13vw 0;
+
 
             &::after {
                 content: "";
                 display: table;
                 clear: both;
             }
-            
-            
+
+
             h2 {
                 line-height: 1.3em;
                 font-size: 3.9vh;
+                font-family: "Inter", sans-serif;
 
             }
 
             img {
                 width: 15vw;
                 transition: transform 0.3s ease;
+
                 &:hover {
                     transform: scale(1.05);
                 }
@@ -111,9 +137,8 @@ h4 {
                     color: #EAE2FA;
                     width: 10em;
                     margin-bottom: 2vh;
+                    font-family: "Inter", sans-serif;
                 }
-
-            
 
             }
 
