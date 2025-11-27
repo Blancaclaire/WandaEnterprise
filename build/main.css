@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 * {
@@ -228,6 +229,26 @@ body {
 }
 .benefits__card--reverse {
   flex-direction: row-reverse;
+}
+
+.video-background {
+  /* El contenedor establece las dimensiones que quieres que el video cubra */
+  position: relative;
+  width: 100%;
+  height: 60vh; /* Ejemplo: 60% de la altura de la ventana */
+  overflow: hidden; /* Importante para recortar los bordes si el video es más grande */
+}
+
+.video-background video {
+  /* El video se estira para cubrir el 100% de su contenedor */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  /* Centra el video usando transform */
+  transform: translate(-50%, -50%);
+  object-fit: cover;
 }
 
 @media (min-width: 1024px) {
