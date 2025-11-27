@@ -183,11 +183,11 @@ header {
 .footerDesktop__item-link {
   color: #fff;
   text-decoration: none;
-  transition: transform 0.3s ease;
+  transition: transform 0.1s ease;
   display: inline-block;
 }
 .footerDesktop__item-link:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .footerDesktop__social {
   display: flex;
@@ -206,7 +206,7 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  transition: transform 0.2s;
+  transition: transform 0.1s;
 }
 .footerDesktop__social-link:hover {
   transform: scale(1.05);
@@ -237,16 +237,15 @@ header {
     gap: 0.75rem;
   }
   .footerDesktop__social-link {
-    width: 32px;
-    height: 32px;
-    background-size: 16px 16px;
+    background-size: cover;
   }
 }
-h1, h2, h3, h4 {
+l h1,
+h2, h3, h4 {
   font-family: "Inter", sans-serif;
 }
 
-.hero {
+.hero, .hero-service {
   background-image: url(../images/ImagenPrincipal2.jpg);
   background-size: cover;
   background-position: center;
@@ -286,5 +285,8 @@ h1, h2, h3, h4 {
   .hero__card img {
     height: 40vh;
   }
+}
+.hero-service {
+  background-image: url(../images/ImagenService.png);
 }
 /*# sourceMappingURL=main.css.map */

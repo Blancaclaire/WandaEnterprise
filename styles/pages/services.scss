@@ -1,0 +1,8 @@
+@use 'home.scss' as *;
+
+.hero-service{
+    @extend .hero;
+    background-image: url(../images/ImagenService.png)  
+}
+    
+
