@@ -6,6 +6,7 @@
     padding: 10px 25px;
     border-radius: 50px;
     font-weight: bold;
+    transition: transform 0.3s ease;
     &:hover {
         background-color: #fbc02d;
         transform: scale(1.05);

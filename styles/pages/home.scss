@@ -21,6 +21,7 @@ h4 {
     padding-top: 60px;
     align-items: center;
 
+   
     &__title {
         color: rgb(253, 253, 253);
         text-align: center;
@@ -32,7 +33,7 @@ h4 {
         }
 
         &-secondary {
-            padding: 1% 20%;
+            padding: 5px 7%;
             font-size: 1.8vh;
             font-weight: 200;
             line-height: 2.5vh;
@@ -45,7 +46,6 @@ h4 {
         flex-direction: column;
         align-items: center;
         margin-top: 45vh;
-
         button {
             @include estilo-boton-resaltado;
         }
@@ -59,13 +59,13 @@ h4 {
 }
 
 
-@media (min-width: 1023px) {
+
+@media  (min-width: 1023px) {
 
     .hero {
         &__bt {
-
-            margin-top: 65vh;
-
+       
+            margin-top: 5vh; 
         }
 
         &__card {
@@ -75,10 +75,14 @@ h4 {
             position: relative;
             justify-content: center;
 
-
+            &::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            
+            
             h2 {
-
-                // width: 10em;
                 line-height: 1.3em;
                 font-size: 3.9vh;
 
@@ -86,52 +90,38 @@ h4 {
 
             img {
                 width: 15vw;
-
-
+                transition: transform 0.3s ease;
+                &:hover {
+                    transform: scale(1.05);
+                }
             }
 
             &--right {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-end;
-                position: absolute;
-                gap: 2.5vh;
-                top: 30vh;
+                float: right;
+
                 img {
-                   
-                    transition: transform 0.3s; 
-                    &:hover {
-                        transform: scale(1.05);
-                    }
+                    float: right;
                 }
 
                 h2 {
                     text-align: right;
                     color: #EAE2FA;
                     width: 10em;
+                    margin-bottom: 2vh;
                 }
+
+            
 
             }
 
             &--left {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                position: absolute;
-                top: 32vh;
-                gap: 2.5vh;
-                img {
-                    // La imagen ya tiene width: 15vw; del padre
-                    transition: transform 0.3s; // Añadir transición para suavizar
-                    &:hover {
-                        transform: scale(1.05);
-                    }
-                }
+                float: left;
 
                 h2 {
                     width: 8em;
-
                     color: #E9D7D7;
+                    margin-bottom: 2vh;
+
                 }
 
 

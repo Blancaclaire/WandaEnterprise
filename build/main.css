@@ -177,7 +177,7 @@ h4 {
   font-size: 6vh;
 }
 .hero__title-secondary {
-  padding: 1% 20%;
+  padding: 5px 7%;
   font-size: 1.8vh;
   font-weight: 200;
   line-height: 2.5vh;
@@ -196,6 +196,7 @@ h4 {
   padding: 10px 25px;
   border-radius: 50px;
   font-weight: bold;
+  transition: transform 0.3s ease;
 }
 .hero__bt button:hover {
   background-color: #fbc02d;
@@ -207,7 +208,7 @@ h4 {
 
 @media (min-width: 1023px) {
   .hero__bt {
-    margin-top: 65vh;
+    margin-top: 5vh;
   }
   .hero__card {
     display: block;
@@ -216,49 +217,41 @@ h4 {
     position: relative;
     justify-content: center;
   }
+  .hero__card::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
   .hero__card h2 {
     line-height: 1.3em;
     font-size: 3.9vh;
   }
   .hero__card img {
     width: 15vw;
+    transition: transform 0.3s ease;
+  }
+  .hero__card img:hover {
+    transform: scale(1.05);
   }
   .hero__card--right {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    position: absolute;
-    gap: 2.5vh;
-    top: 30vh;
+    float: right;
   }
   .hero__card--right img {
-    transition: transform 0.3s;
-  }
-  .hero__card--right img:hover {
-    transform: scale(1.05);
+    float: right;
   }
   .hero__card--right h2 {
     text-align: right;
     color: #EAE2FA;
     width: 10em;
+    margin-bottom: 2vh;
   }
   .hero__card--left {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position: absolute;
-    top: 32vh;
-    gap: 2.5vh;
-  }
-  .hero__card--left img {
-    transition: transform 0.3s;
-  }
-  .hero__card--left img:hover {
-    transform: scale(1.05);
+    float: left;
   }
   .hero__card--left h2 {
     width: 8em;
     color: #E9D7D7;
+    margin-bottom: 2vh;
   }
 }
 /*# sourceMappingURL=main.css.map */
