@@ -1,3 +1,4 @@
+//Funcion para abrir y cerrar nav
 const button = document.querySelector('.headerMobile__nav-button');
 const menu = document.querySelector('.headerMobile__nav-menu');
 
@@ -10,45 +11,27 @@ button.addEventListener('click', () => {
 });
 
 
-// Seleccionar todos los botones de pregunta
-const faqQuestions = document.querySelectorAll('.faq__question');
+//Funcion para abrir y cerrar seccion preguntas frecuentes
 
-// Función para cerrar todos los items
-function closeAllItems() {
-    const allItems = document.querySelectorAll('.faq__item');
-    allItems.forEach(item => {
-        item.classList.remove('faq__item--active');
-        const button = item.querySelector('.faq__question');
-        button.setAttribute('aria-expanded', 'false');
-    });
-}
+const questions = document.querySelectorAll('.faq__question');
 
-// Función para toggle del item
-function toggleItem(button) {
-    const item = button.closest('.faq__item');
-    const isActive = item.classList.contains('faq__item--active');
-    
-    // Cerrar todos los items
-    closeAllItems();
-    
-    // Si el item no estaba activo, abrirlo
-    if (!isActive) {
-        item.classList.add('faq__item--active');
-        button.setAttribute('aria-expanded', 'true');
-    }
-}
 
-// Agregar event listeners a cada pregunta
-faqQuestions.forEach(question => {
+questions.forEach(question => {
     question.addEventListener('click', function() {
-        toggleItem(this);
-    });
-    
-    // Soporte para teclado (Enter y Espacio)
-    question.addEventListener('keydown', function(e) {
-        if (e.key === 'Enter' || e.key === ' ') {
-            e.preventDefault();
-            toggleItem(this);
+        
+
+        const item = this.closest('.faq__item');
+        
+
+        const estabaAbierto = item.classList.contains('faq__item--active');
+
+
+        document.querySelectorAll('.faq__item').forEach(i => {
+            i.classList.remove('faq__item--active');
+        });
+
+        if (!estabaAbierto) {
+            item.classList.add('faq__item--active');
         }
     });
 });
