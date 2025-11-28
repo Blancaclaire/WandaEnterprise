@@ -25,6 +25,12 @@ header {
 .headerMobile__logo--reduced {
   width: 33px;
 }
+.headerMobile__logo {
+  transition: transform 0.3s ease;
+}
+.headerMobile__logo:hover {
+  transform: scale(1.07);
+}
 .headerMobile__nav {
   display: inline;
   float: right;
@@ -85,8 +91,8 @@ header {
   }
   .headerDesktop {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     height: 100px;
     width: 100%;
     min-width: fit-content;
@@ -97,6 +103,10 @@ header {
   }
   .headerDesktop__logo img {
     width: 10em;
+    transition: transform 0.3s ease;
+  }
+  .headerDesktop__logo img:hover {
+    transform: scale(1.07);
   }
   .headerDesktop__nav {
     display: flex;
@@ -123,32 +133,36 @@ header {
     padding: 15px 20px;
     color: #f8f7f7;
     text-decoration: none;
-    transition: transform 0.2s;
+    transition: transform 0.3s ease;
   }
   .headerDesktop__nav-item--left a:hover {
-    transform: scale(1.05);
+    transform: scale(1.07);
   }
   .headerDesktop__nav-item--right a {
     display: block;
     padding: 15px 20px;
     color: #f8f7f7;
     text-decoration: none;
-    transition: transform 0.2s;
+    transition: transform 0.3s ease;
   }
   .headerDesktop__nav-item--right a:hover {
-    transform: scale(1.05);
+    transform: scale(1.07);
   }
   .headerDesktop__nav-item--right:last-child a {
-    background-color: #fdd835;
-    color: #333;
+    border: none;
+    cursor: pointer;
+    background-color: #fbc02d;
+    color: #ffffff;
     padding: 10px 25px;
     border-radius: 50px;
     font-weight: bold;
-    transition: transform 0.2s;
+    transition: transform 0.3s ease;
   }
   .headerDesktop__nav-item--right:last-child a:hover {
-    background-color: #fbc02d;
-    transform: scale(1.05);
+    transform: scale(1.07);
+  }
+  .headerDesktop__nav-item--right:last-child a:hover {
+    color: #353535;
   }
 }
 body {
@@ -198,8 +212,10 @@ body {
   transition: transform 0.3s ease;
 }
 .hero__bt button:hover {
-  background-color: #fbc02d;
   transform: scale(1.07);
+}
+.hero__bt button:hover {
+  background-color: #fbc02d;
 }
 .hero__card {
   display: none;
@@ -230,19 +246,171 @@ body {
   flex-direction: row-reverse;
 }
 
-.aspirational {
+.aspirational__video {
   position: relative;
   width: 100%;
   height: 30vh;
   overflow: hidden;
 }
-.aspirational video {
+.aspirational__video video {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.faq {
+  padding: 1rem;
+}
+@media (min-width: 768px) {
+  .faq {
+    padding: 2rem 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .faq {
+    padding: 3rem 2rem;
+  }
+}
+.faq__container {
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .faq__container {
+    max-width: 800px;
+  }
+}
+.faq__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #1a1a1a;
+}
+@media (min-width: 768px) {
+  .faq__title {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .faq__title {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+}
+.faq__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+@media (min-width: 768px) {
+  .faq__list {
+    gap: 1rem;
+  }
+}
+.faq__item {
+  background-color: #dad6d3;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+.faq__item:hover {
+  background-color: rgb(211.0111111111, 206.2555555556, 202.6888888889);
+}
+.faq__item--active .faq__answer {
+  max-height: 500px;
+  padding: 0.75rem 1rem;
+}
+@media (min-width: 768px) {
+  .faq__item--active .faq__answer {
+    padding: 1rem 1.5rem;
+  }
+}
+.faq__item--active .faq__icon {
+  transform: rotate(45deg);
+}
+.faq__item--active .faq__question {
+  font-weight: 600;
+}
+.faq__question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-size: 0.95rem;
+  color: #1a1a1a;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+@media (min-width: 768px) {
+  .faq__question {
+    padding: 1.25rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+.faq__question:hover {
+  opacity: 0.8;
+}
+.faq__question:focus {
+  outline: 2px solid rgba(0, 0, 0, 0.2);
+  outline-offset: -2px;
+}
+@media (hover: none) and (pointer: coarse) {
+  .faq__question {
+    padding: 1.25rem 1rem;
+  }
+}
+.faq__question-text {
+  flex: 1;
+  font-weight: 500;
+  padding-right: 0.5rem;
+}
+@media (min-width: 768px) {
+  .faq__question-text {
+    padding-right: 1rem;
+  }
+}
+.faq__icon {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+@media (min-width: 768px) {
+  .faq__icon {
+    margin-left: 1rem;
+  }
+}
+.faq__answer {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 1rem;
+  transition: all 0.3s ease;
+}
+@media (min-width: 768px) {
+  .faq__answer {
+    padding: 0 1.5rem;
+  }
+}
+.faq__answer-content {
+  padding-bottom: 0.75rem;
+  color: rgb(0.5, 0.5, 0.5);
+  font-size: 0.9rem;
+}
+@media (min-width: 768px) {
+  .faq__answer-content {
+    padding-bottom: 1rem;
+    font-size: 0.95rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -324,7 +492,7 @@ body {
   .benefits__card-text h3 {
     font-size: 25px;
   }
-  .aspirational {
+  .aspirational__video {
     height: 60vh;
     overflow: hidden;
   }

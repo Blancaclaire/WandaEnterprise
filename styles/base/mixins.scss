@@ -1,15 +1,11 @@
-@mixin estilo-boton-resaltado {
-    border: none; 
-    cursor: pointer; 
-    background-color: #353535; 
-    color: #ffffff;
-    padding: 10px 25px;
-    border-radius: 50px;
-    font-weight: bold;
+@mixin scale-efect {
     transition: transform 0.3s ease;
-    &:hover {
-        background-color: #fbc02d;
+    &:hover{
         transform: scale(1.07);
     }
+}
 
+@mixin flex-center {
+    display: flex;
+    align-items: center;
 }

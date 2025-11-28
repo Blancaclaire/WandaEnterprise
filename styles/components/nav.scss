@@ -1,9 +1,12 @@
+@use '../base/mixins' as *;
+@use '../components/buttons.scss' as *;
+
 header {
 
     position: relative;
-    z-index: 100; 
-    background-color: transparent; 
-  
+    z-index: 100;
+    background-color: transparent;
+
 }
 
 .headerMobile {
@@ -17,6 +20,8 @@ header {
         &--reduced {
             width: 33px;
         }
+
+        @include scale-efect();
 
     }
 
@@ -94,20 +99,20 @@ header {
     }
 
     .headerDesktop {
-        display: flex;
+        @include flex-center();
         justify-content: space-between;
-        align-items: center;
         height: 100px;
         width: 100%;
         min-width: fit-content;
         padding: 0 2em;
-        background-color: transparent; // Quitar fondo blanco si lo tuviera
-        position: relative; // Mantenlo relative
+        background-color: transparent;
+        position: relative;
         z-index: 10;
-        
+
         &__logo img {
 
             width: 10em;
+            @include scale-efect();
         }
 
         &__nav {
@@ -139,11 +144,7 @@ header {
                     padding: 15px 20px;
                     color: #f8f7f7;
                     text-decoration: none;
-                    transition: transform 0.2s;
-
-                    &:hover {
-                        transform: scale(1.05);
-                    }
+                    @include scale-efect();
                 }
 
             }
@@ -155,26 +156,12 @@ header {
                     padding: 15px 20px;
                     color: #f8f7f7;
                     text-decoration: none;
-                    transition: transform 0.2s;
-
-                    &:hover {
-                        transform: scale(1.05);
-                    }
+                    @include scale-efect();
                 }
 
                 &:last-child {
                     a {
-                        background-color: #fdd835;
-                        color: #333;
-                        padding: 10px 25px;
-                        border-radius: 50px;
-                        font-weight: bold;
-                        transition: transform 0.2s;
-
-                        &:hover {
-                            background-color: #fbc02d;
-                            transform: scale(1.05);
-                        }
+                        @include highlightedBt();
                     }
                 }
 

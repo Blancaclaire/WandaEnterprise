@@ -1,10 +1,37 @@
-@use '../base/mixins.scss' as *;
+@use '../base/variables' as *; 
+@use '../base/mixins' as *;
+@use '../components/buttons.scss' as *;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+$color-bg-primary: #e8e4e1;
+$color-bg-item: #dad6d3;
+$color-text: #1a1a1a;
+$color-border: #c0bbb8;
+$transition-speed: 0.3s;
+$font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+
+// Breakpoints (mobile-first)
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+// Mixins
+
+@mixin transition($property: all) {
+    transition: $property $transition-speed ease;
+}
+
+// Mixin para media queries mobile-first
+@mixin respond-to($breakpoint) {
+    @media (min-width: $breakpoint) {
+        @content;
+    }
+}
+
 
 
 body {
-    background-color: #EAE6E6;
+    background-color: $background-principal;
 }
 
 .hero {
@@ -24,8 +51,8 @@ body {
         margin-top: 7vh;
 
         &-principal {
-            font-size: 6vh;
-            font-family: "Inter", sans-serif;
+            font-size: $title__principal-size;
+            font-family: $font-titles;
 
         }
 
@@ -34,7 +61,7 @@ body {
             font-size: 1.8vh;
             font-weight: 200;
             line-height: 2.5vh;
-            font-family: "Inter", sans-serif;
+            font-family: $font-titles;
 
         }
     }
@@ -46,7 +73,7 @@ body {
         margin-top: 45vh;
 
         button {
-            @include estilo-boton-resaltado;
+            @include standardBt;
         }
 
     }
@@ -96,7 +123,7 @@ body {
     }
 }
 
-.aspirational {
+.aspirational__video {
     position: relative;
     width: 100%;
     height: 30vh;
@@ -111,6 +138,176 @@ body {
         object-fit: cover;
     }
 }
+
+
+.faq {
+    padding: 1rem; // Padding móvil por defecto
+
+    // Tablet y superiores
+    @include respond-to($breakpoint-tablet) {
+        padding: 2rem 1.5rem;
+    }
+
+    // Desktop
+    @include respond-to($breakpoint-desktop) {
+        padding: 3rem 2rem;
+    }
+
+    // Elemento: container
+    &__container {
+        width: 100%; // Ancho completo en móvil
+        margin: 0 auto;
+
+        @include respond-to($breakpoint-tablet) {
+            max-width: 800px;
+        }
+    }
+
+    // Elemento: title
+    &__title {
+        font-size: 1.5rem; // Tamaño móvil por defecto
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        color: $color-text;
+
+        @include respond-to($breakpoint-tablet) {
+            font-size: 1.75rem;
+            margin-bottom: 2rem;
+        }
+
+        @include respond-to($breakpoint-desktop) {
+            font-size: 2rem;
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    // Elemento: list
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem; // Gap menor en móvil
+
+        @include respond-to($breakpoint-tablet) {
+            gap: 1rem;
+        }
+    }
+
+    // Elemento: item
+    &__item {
+        background-color: $color-bg-item;
+        border-radius: 4px;
+        overflow: hidden;
+        @include transition(background-color);
+
+        &:hover {
+            background-color: darken($color-bg-item, 3%);
+        }
+
+        // Modificador: active (cuando está abierto)
+        &--active {
+            .faq__answer {
+                max-height: 500px;
+                padding: 0.75rem 1rem; // Padding móvil
+
+                @include respond-to($breakpoint-tablet) {
+                    padding: 1rem 1.5rem;
+                }
+            }
+
+            .faq__icon {
+                transform: rotate(45deg);
+            }
+
+            .faq__question {
+                font-weight: 600;
+            }
+        }
+    }
+
+    // Elemento: question
+    &__question {
+        width: 100%;
+        @include flex-center;
+        justify-content: space-between;
+        padding: 1rem; // Padding móvil por defecto
+        background: none;
+        border: none;
+        cursor: pointer;
+        text-align: left;
+        font-size: 0.95rem; // Tamaño móvil
+        color: $color-text;
+        font-family: inherit;
+        @include transition;
+
+        @include respond-to($breakpoint-tablet) {
+            padding: 1.25rem 1.5rem;
+            font-size: 1rem;
+        }
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:focus {
+            outline: 2px solid rgba(0, 0, 0, 0.2);
+            outline-offset: -2px;
+        }
+
+        // Área de toque más grande en móvil
+        @media (hover: none) and (pointer: coarse) {
+            padding: 1.25rem 1rem;
+        }
+    }
+
+    // Elemento: question-text
+    &__question-text {
+        flex: 1;
+        font-weight: 500;
+        padding-right: 0.5rem; // Espacio para el icono en móvil
+
+        @include respond-to($breakpoint-tablet) {
+            padding-right: 1rem;
+        }
+    }
+
+    // Elemento: icon
+    &__icon {
+        font-size: 1.5rem;
+        font-weight: 300;
+        line-height: 1;
+        @include transition(transform);
+        flex-shrink: 0; // Evita que se encoja en móvil
+
+        @include respond-to($breakpoint-tablet) {
+            margin-left: 1rem;
+        }
+    }
+
+    // Elemento: answer
+    &__answer {
+        max-height: 0;
+        overflow: hidden;
+        padding: 0 1rem; // Padding móvil
+        @include transition(all);
+
+        @include respond-to($breakpoint-tablet) {
+            padding: 0 1.5rem;
+        }
+    }
+
+    // Elemento: answer-content
+    &__answer-content {
+        padding-bottom: 0.75rem; // Padding móvil
+        color: darken($color-text, 10%);
+        font-size: 0.9rem; // Tamaño móvil
+
+        @include respond-to($breakpoint-tablet) {
+            padding-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+    }
+}
+
 
 
 @media (min-width: 1024px) {
@@ -233,8 +430,7 @@ body {
         }
     }
 
-
-    .aspirational {
+    .aspirational__video {
   
         height: 60vh;
         overflow: hidden;
