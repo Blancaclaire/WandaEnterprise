@@ -165,9 +165,10 @@ header {
     color: #353535;
   }
 }
-body {
-  background-color: #EAE6E6;
+.footer {
+  padding: 2rem 0;
 }
+
 .footerDesktop {
   background-image: url(../images/FooterBackground.png);
   background-size: cover;
@@ -253,9 +254,8 @@ body {
     background-size: cover;
   }
 }
-l h1,
-h2, h3, h4 {
-  font-family: "Inter", sans-serif;
+body {
+  background-color: #EAE6E6;
 }
 
 .hero, .hero-service {
@@ -375,16 +375,11 @@ h2, h3, h4 {
   transition: background-color 0.3s ease;
 }
 .faq__item:hover {
-  background-color: rgb(211.0111111111, 206.2555555556, 202.6888888889);
+  background-color: #ccc8c5;
 }
 .faq__item--active .faq__answer {
   max-height: 500px;
   padding: 0.75rem 1rem;
-}
-@media (min-width: 768px) {
-  .faq__item--active .faq__answer {
-    padding: 1rem 1.5rem;
-  }
 }
 .faq__item--active .faq__icon {
   transform: rotate(45deg);
@@ -407,12 +402,6 @@ h2, h3, h4 {
   font-family: inherit;
   transition: all 0.3s ease;
 }
-@media (min-width: 768px) {
-  .faq__question {
-    padding: 1.25rem 1.5rem;
-    font-size: 1rem;
-  }
-}
 .faq__question:hover {
   opacity: 0.8;
 }
@@ -430,11 +419,6 @@ h2, h3, h4 {
   font-weight: 500;
   padding-right: 0.5rem;
 }
-@media (min-width: 768px) {
-  .faq__question-text {
-    padding-right: 1rem;
-  }
-}
 .faq__icon {
   font-size: 1.5rem;
   font-weight: 300;
@@ -442,32 +426,16 @@ h2, h3, h4 {
   transition: transform 0.3s ease;
   flex-shrink: 0;
 }
-@media (min-width: 768px) {
-  .faq__icon {
-    margin-left: 1rem;
-  }
-}
 .faq__answer {
   max-height: 0;
   overflow: hidden;
   padding: 0 1rem;
   transition: all 0.3s ease;
 }
-@media (min-width: 768px) {
-  .faq__answer {
-    padding: 0 1.5rem;
-  }
-}
 .faq__answer-content {
   padding-bottom: 0.75rem;
-  color: rgb(0.5, 0.5, 0.5);
+  color: #171717;
   font-size: 0.9rem;
-}
-@media (min-width: 768px) {
-  .faq__answer-content {
-    padding-bottom: 1rem;
-    font-size: 0.95rem;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -568,6 +536,6 @@ h2, h3, h4 {
   }
 }
 .hero-service {
-  background-image: url(../images/ImagenService.png);
+  background-image: url(../images/ImagenPrincipal2.jpg);
 }
 /*# sourceMappingURL=main.css.map */

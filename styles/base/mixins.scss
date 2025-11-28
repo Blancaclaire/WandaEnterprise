@@ -1,3 +1,5 @@
+@use '../base/variables' as *;
+
 @mixin scale-efect {
     transition: transform 0.3s ease;
     &:hover{
