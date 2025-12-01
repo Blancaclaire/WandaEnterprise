@@ -1,277 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home</title>
+    <link rel="stylesheet" href="./build/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>home</title>
-  <link rel="stylesheet" href="./build/main.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-    rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet" />
-</head>
+  <body>
+    <header class="header headerMobile">
+      <div class="headerMobile__logo">
+        <a href="./index.html">
+          <img
+            class="headerMobile__logo--reduced"
+            src="./images/LogoReducido.png"
+            alt="Logo Reducido"
+        /></a>
+      </div>
+      <div class="headerMobile__nav">
+        <button class="headerMobile__nav-button">
+          <span class="headerMobile__nav-line"></span>
+          <span class="headerMobile__nav-line"></span>
+          <span class="headerMobile__nav-line"></span>
+        </button>
+        <nav class="headerMobile__nav-menu header__nav-menu--hidden">
+          <ul class="headerMobile__nav-list">
+            <li class="headerMobile__nav-item">
+              <a href="./services.html">Servicios</a>
+            </li>
+            <li class="headerMobile__nav-item">
+              <a href="#Sobre Nosotros">Sobre Nosotros</a>
+            </li>
+            <li class="headerMobile__nav-item">
+              <a href="#Contacto">Contacto</a>
+            </li>
+            <li class="headerMobile__nav-item">
+              <a href="#InicioSesión">Inicio Sesión</a>
+            </li>
+            <li class="headerMobile__nav-item">
+              <a href="#Registro">Registro</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-<body>
-  <header class="header headerMobile">
-    <div class="headerMobile__logo">
-      <a href="./index.html">
-        <img class="headerMobile__logo--reduced" src="./images/LogoReducido.png" alt="Logo Reducido"></a>
-    </div>
-    <div class="headerMobile__nav">
-      <button class="headerMobile__nav-button">
-        <span class="headerMobile__nav-line"></span>
-        <span class="headerMobile__nav-line"></span>
-        <span class="headerMobile__nav-line"></span>
-      </button>
-      <nav class="headerMobile__nav-menu header__nav-menu--hidden">
-        <ul class="headerMobile__nav-list">
-          <li class="headerMobile__nav-item">
+    <header class="header headerDesktop">
+      <div class="headerDesktop__logo">
+        <img
+          class="headerDesktop__logo--principal"
+          src="./images/LogoPrincipal.png"
+          alt="Logo Principal"
+        />
+      </div>
+
+      <nav class="headerDesktop__nav">
+        <ul class="headerDesktop__nav-list">
+          <li class="headerDesktop__nav-item--left">
             <a href="./services.html">Servicios</a>
           </li>
-          <li class="headerMobile__nav-item">
+          <li class="headerDesktop__nav-item--left">
             <a href="#Sobre Nosotros">Sobre Nosotros</a>
           </li>
-          <li class="headerMobile__nav-item">
+          <li class="headerDesktop__nav-item--left">
             <a href="#Contacto">Contacto</a>
           </li>
-          <li class="headerMobile__nav-item">
+          <li class="headerDesktop__nav-item--right">
             <a href="#InicioSesión">Inicio Sesión</a>
           </li>
-          <li class="headerMobile__nav-item">
+          <li class="headerDesktop__nav-item--right">
             <a href="#Registro">Registro</a>
           </li>
         </ul>
       </nav>
-    </div>
-  </header>
+    </header>
 
-  <header class="header headerDesktop">
-    <div class="headerDesktop__logo">
-      <img class="headerDesktop__logo--principal" src="./images/LogoPrincipal.png" alt="Logo Principal">
-    </div>
-
-    <nav class="headerDesktop__nav">
-      <ul class="headerDesktop__nav-list">
-        <li class="headerDesktop__nav-item--left">
-          <a href="./services.html">Servicios</a>
-        </li>
-        <li class="headerDesktop__nav-item--left">
-          <a href="#Sobre Nosotros">Sobre Nosotros</a>
-        </li>
-        <li class="headerDesktop__nav-item--left">
-          <a href="#Contacto">Contacto</a>
-        </li>
-        <li class="headerDesktop__nav-item--right">
-          <a href="#InicioSesión">Inicio Sesión</a>
-        </li>
-        <li class="headerDesktop__nav-item--right">
-          <a href="#Registro">Registro</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="main-container">
-
-    <section class="hero" id="hero">
-      <div class="hero__title">
-        <h1 class="hero__title-principal">Tu economía personal más clara que nunca</h1>
-        <h3 class="hero__title-secondary">WANDA te ayuda a controlar tus gastos, planificar tus ahorros y
-          mejorar tu bienestar financiero sin complicaciones</h3>
-
-      </div>
-
-      <div class="hero__card">
-
-        <div class="hero__card--right">
-          <h2 class="hero__card-subtitle">Tus objetivos de ahorro, más cerca cada día.</h2>
-          <a href="./services.html"><img class="hero__card-img" src="./images/Card2.png" alt="Tarjeta 1"></a>
-
-
+    <main class="main-container">
+      <section class="hero" id="hero">
+        <div class="hero__title">
+          <h1 class="hero__title-principal">
+            Tu economía personal más clara que nunca
+          </h1>
+          <h3 class="hero__title-secondary">
+            WANDA te ayuda a controlar tus gastos, planificar tus ahorros y
+            mejorar tu bienestar financiero sin complicaciones
+          </h3>
         </div>
 
-
-        <div class="hero__card--left">
-          <h2 class="hero__card-subtitile">Porque ahorrar juntos es más fácil.</h2>
-          <a href="./services.html"><img class="hero__card-img" src="./images/Card1.png" alt="Tarjeta 2"></a>
-        </div>
-
-      </div>
-
-      <div class="hero__bt">
-        <button>Empieza</button>
-      </div>
-
-    </section>
-
-
-    <section class="benefits">
-
-      <div class="benefits__title">
-
-        <h1>Todo lo que necesitas para tus finanzas, en un solo lugar.</h1>
-      </div>
-
-      <div class="benefits__card">
-        <img src="./images/imagenMovil.png" alt="Movil">
-        <div class="benefits__card-text">
-          <h3>Gastos claros y ordenados</h3>
-          <p>Si cada mes pagas alquiler, transporte y compras del supermercado, WANDA te muestra
-            automáticamente cuánto gastas en cada categoría y cómo cambia tu consumo con el tiempo.</p>
-        </div>
-      </div>
-
-      <div class="benefits__card benefits__card--reverse">
-        <img src="./images/imagenPortatil.png" alt="Movil">
-        <div class="benefits__card-text benefits__card-text--reverse">
-          <h3>Balances automáticos</h3>
-          <p> Al final del mes, WANDA te presenta un resumen visual con el total de gastos, ingresos y ahorro
-            real conseguido.</p>
-        </div>
-      </div>
-
-      <div class="benefits__card">
-        <img src="./images/imagenPareja.png" alt="Portatil">
-        <div class="benefits__card-text ">
-          <h3>Cuentas conjuntas</h3>
-          <p>Lleva un registro completo de los gastos compartidos con tu pareja, compañeros de piso o amigos.
-          </p>
-        </div>
-      </div>
-
-    </section>
-
-    <section class="aspirational">
-
-      <div class="aspirational__video">
-        <video autoplay loop muted playsinline>
-          <source src="./video/VideoProject1.mp4" type="video/mp4">
-        </video>
-      </div>
-
-    </section>
-
-    <section class="faq">
-      <div class="faq__container">
-        <h1 class="faq__title">Preguntas frecuentes</h1>
-
-        <div class="faq__list">
-
-          <div class="faq__item">
-            <button class="faq__question">
-              <span class="faq__question-text">¿Que es Wanda?</span>
-              <span class="faq__icon">+</span>
-            </button>
-            <div class="faq__answer">
-              <div class="faq__answer-content">
-                Wanda es una aplicación web diseñada para facilitar la gestión y organización de información de manera
-                eficiente.
-              </div>
-            </div>
+        <div class="hero__card">
+          <div class="hero__card--right">
+            <h2 class="hero__card-subtitle">
+              Tus objetivos de ahorro, más cerca cada día.
+            </h2>
+            <a href="./services.html"
+              ><img
+                class="hero__card-img"
+                src="./images/Card2.png"
+                alt="Tarjeta 1"
+            /></a>
           </div>
 
+          <div class="hero__card--left">
+            <h2 class="hero__card-subtitile">
+              Porque ahorrar juntos es más fácil.
+            </h2>
+            <a href="./services.html"
+              ><img
+                class="hero__card-img"
+                src="./images/Card1.png"
+                alt="Tarjeta 2"
+            /></a>
+          </div>
+        </div>
 
-          <div class="faq__item">
-            <button class="faq__question">
-              <span class="faq__question-text">¿Necesito saber contabilidad para usar WANDA?</span>
-              <span class="faq__icon">+</span>
-            </button>
-            <div class="faq__answer">
-              <div class="faq__answer-content">
-                No es necesario tener conocimientos previos de contabilidad. WANDA está diseñada para ser intuitiva y
-                fácil de usar.
+        <div class="hero__bt">
+          <button>Empieza</button>
+        </div>
+      </section>
+
+      <section class="benefits">
+        <div class="benefits__title">
+          <h1>Todo lo que necesitas para tus finanzas, en un solo lugar.</h1>
+        </div>
+
+        <div class="benefits__card">
+          <img src="./images/imagenMovil.png" alt="Movil" />
+          <div class="benefits__card-text">
+            <h3>Gastos claros y ordenados</h3>
+            <p>
+              Si cada mes pagas alquiler, transporte y compras del supermercado,
+              WANDA te muestra automáticamente cuánto gastas en cada categoría y
+              cómo cambia tu consumo con el tiempo.
+            </p>
+          </div>
+        </div>
+
+        <div class="benefits__card benefits__card--reverse">
+          <img src="./images/imagenPortatil.png" alt="Movil" />
+          <div class="benefits__card-text benefits__card-text--reverse">
+            <h3>Balances automáticos</h3>
+            <p>
+              Al final del mes, WANDA te presenta un resumen visual con el total
+              de gastos, ingresos y ahorro real conseguido.
+            </p>
+          </div>
+        </div>
+
+        <div class="benefits__card">
+          <img src="./images/imagenPareja.png" alt="Portatil" />
+          <div class="benefits__card-text">
+            <h3>Cuentas conjuntas</h3>
+            <p>
+              Lleva un registro completo de los gastos compartidos con tu
+              pareja, compañeros de piso o amigos.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="aspirational">
+        <div class="aspirational__video">
+          <video autoplay loop muted playsinline>
+            <source src="./video/VideoProject1.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </section>
+
+      <section class="faq">
+        <div class="faq__container">
+          <h1 class="faq__title">Preguntas frecuentes</h1>
+
+          <div class="faq__list">
+            <div class="faq__item">
+              <button class="faq__question">
+                <span class="faq__question-text">¿Que es Wanda?</span>
+                <span class="faq__icon">+</span>
+              </button>
+              <div class="faq__answer">
+                <div class="faq__answer-content">
+                  Wanda es una aplicación web diseñada para facilitar la gestión
+                  y organización de información de manera eficiente.
+                </div>
               </div>
             </div>
-          </div>
 
-
-          <div class="faq__item">
-            <button class="faq__question">
-              <span class="faq__question-text">¿Cómo me ayuda WANDA a ahorrar?</span>
-              <span class="faq__icon">+</span>
-            </button>
-            <div class="faq__answer">
-              <div class="faq__answer-content">
-                WANDA te ayuda a ahorrar optimizando tus procesos, reduciendo tiempo de gestión y proporcionando
-                herramientas eficientes.
+            <div class="faq__item">
+              <button class="faq__question">
+                <span class="faq__question-text"
+                  >¿Necesito saber contabilidad para usar WANDA?</span
+                >
+                <span class="faq__icon">+</span>
+              </button>
+              <div class="faq__answer">
+                <div class="faq__answer-content">
+                  No es necesario tener conocimientos previos de contabilidad.
+                  WANDA está diseñada para ser intuitiva y fácil de usar.
+                </div>
               </div>
             </div>
-          </div>
 
-
-          <div class="faq__item">
-            <button class="faq__question">
-              <span class="faq__question-text">¿Mis datos están seguros?</span>
-              <span class="faq__icon">+</span>
-            </button>
-            <div class="faq__answer">
-              <div class="faq__answer-content">
-                Sí, todos tus datos están protegidos con encriptación de última generación y cumplimos con todas las
-                normativas de seguridad.
+            <div class="faq__item">
+              <button class="faq__question">
+                <span class="faq__question-text"
+                  >¿Cómo me ayuda WANDA a ahorrar?</span
+                >
+                <span class="faq__icon">+</span>
+              </button>
+              <div class="faq__answer">
+                <div class="faq__answer-content">
+                  WANDA te ayuda a ahorrar optimizando tus procesos, reduciendo
+                  tiempo de gestión y proporcionando herramientas eficientes.
+                </div>
               </div>
             </div>
-          </div>
 
+            <div class="faq__item">
+              <button class="faq__question">
+                <span class="faq__question-text"
+                  >¿Mis datos están seguros?</span
+                >
+                <span class="faq__icon">+</span>
+              </button>
+              <div class="faq__answer">
+                <div class="faq__answer-content">
+                  Sí, todos tus datos están protegidos con encriptación de
+                  última generación y cumplimos con todas las normativas de
+                  seguridad.
+                </div>
+              </div>
+            </div>
 
-          <div class="faq__item">
-            <button class="faq__question">
-              <span class="faq__question-text">¿En qué se diferencia Wanda de otras aplicaciones web?</span>
-              <span class="faq__icon">+</span>
-            </button>
-            <div class="faq__answer">
-              <div class="faq__answer-content">
-                Wanda se destaca por su interfaz intuitiva, su enfoque en la experiencia del usuario y sus potentes
-                funcionalidades integradas.
+            <div class="faq__item">
+              <button class="faq__question">
+                <span class="faq__question-text"
+                  >¿En qué se diferencia Wanda de otras aplicaciones web?</span
+                >
+                <span class="faq__icon">+</span>
+              </button>
+              <div class="faq__answer">
+                <div class="faq__answer-content">
+                  Wanda se destaca por su interfaz intuitiva, su enfoque en la
+                  experiencia del usuario y sus potentes funcionalidades
+                  integradas.
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
+    </main>
+    <footer class="footer footerDesktop">
+      <div class="footerDesktop__logo">
+        <a href="#hero">
+          <img
+            src="./images/LogoPrincipal.png"
+            alt="Wanda"
+            class="footerDesktop__logo-img"
+          />
+        </a>
       </div>
-    </section>
+      <nav class="footerDesktop__nav">
+        <ul class="footerDesktop__nav-list">
+          <li class="footerDesktop__item">
+            <a href="#" class="footerDesktop__item-link">Sobre Nosotros</a>
+          </li>
+          <li class="footerDesktop__item">
+            <a href="#" class="footerDesktop__item-link">Registro</a>
+          </li>
+          <li class="footerDesktop__item">
+            <a href="#" class="footerDesktop__item-link">Contacta</a>
+          </li>
+          <li class="footerDesktop__item">
+            <a href="#" class="footerDesktop__item-link">Aviso Legal</a>
+          </li>
+        </ul>
+      </nav>
 
-  </main>
-  <footer class="footer footerDesktop">
-    <div class="footerDesktop__logo">
-      <a href="#hero">
-      <img src="./images/LogoPrincipal.png" alt="Wanda" class="footerDesktop__logo-img" />
-      </a>
-    </div>
-    <nav class="footerDesktop__nav">
-      <ul class="footerDesktop__nav-list">
-        <li class="footerDesktop__item">
-          <a href="#" class="footerDesktop__item-link">Sobre Nosotros</a>
-        </li>
-        <li class="footerDesktop__item">
-          <a href="#" class="footerDesktop__item-link">Registro</a>
-        </li>
-        <li class="footerDesktop__item">
-          <a href="#" class="footerDesktop__item-link">Contacta</a>
-        </li>
-        <li class="footerDesktop__item">
-          <a href="#" class="footerDesktop__item-link">Aviso Legal</a>
-        </li>
-      </ul>
-    </nav>
-
-    <div class="footerDesktop__social">
-      <a href="#" class="footerDesktop__social-link footerDesktop__social-link--facebook" aria-label="Facebook">
-      </a>
-      <a href="#" class="footerDesktop__social-link footerDesktop__social-link--tiktok" aria-label="TikTok">
-      </a>
-      <a href="#" class="footerDesktop__social-link footerDesktop__social-link--instagram" aria-label="Instagram">
-      </a>
-      <a href="#" class="footerDesktop__social-link footerDesktop__social-link--linkedin" aria-label="LinkedIn">
-      </a>
-    </div>
-  </footer>
-</body>
-<script src="./js/home.js"></script>
-
+      <div class="footerDesktop__social">
+        <a
+          href="#"
+          class="footerDesktop__social-link footerDesktop__social-link--facebook"
+          aria-label="Facebook"
+        >
+        </a>
+        <a
+          href="#"
+          class="footerDesktop__social-link footerDesktop__social-link--tiktok"
+          aria-label="TikTok"
+        >
+        </a>
+        <a
+          href="#"
+          class="footerDesktop__social-link footerDesktop__social-link--instagram"
+          aria-label="Instagram"
+        >
+        </a>
+        <a
+          href="#"
+          class="footerDesktop__social-link footerDesktop__social-link--linkedin"
+          aria-label="LinkedIn"
+        >
+        </a>
+      </div>
+    </footer>
+  </body>
+  <script src="./js/home.js"></script>
 </html>
