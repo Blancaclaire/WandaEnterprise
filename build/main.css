@@ -551,6 +551,9 @@ body {
 .black-button:hover {
   background-color: #fbc02d;
 }
+.black-button {
+  width: 40%;
+}
 
 .hero-service {
   position: relative;
@@ -560,7 +563,8 @@ body {
   background-image: url("../images/backgroudService.png");
   background-size: cover;
   background-position: center;
-  align-items: flex-start;
+  display: block;
+  width: 100%;
 }
 .hero-service__container {
   width: 75%;
@@ -577,11 +581,11 @@ body {
   }
 }
 .hero-service__info-card {
+  float: left;
   background: rgba(44, 24, 24, 0.1);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   padding: 4rem 3rem;
-  margin: 5rem;
   border-radius: 25px;
   max-width: 500px;
   border: 1px solid rgba(255, 255, 255, 0.25);
@@ -589,11 +593,11 @@ body {
 }
 @media (max-width: 768px) {
   .hero-service__info-card {
-    min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     padding: 2rem 1.5rem;
+    width: 100%;
   }
 }
 .hero-service__title {
@@ -623,6 +627,7 @@ body {
 }
 .hero-service__img {
   position: absolute;
+  float: right;
   bottom: 0;
   right: 0;
   z-index: 10;
@@ -633,6 +638,11 @@ body {
   background-position: bottom right;
   width: 600px;
   height: 600px;
+}
+.hero-service__img img {
+  width: 20em;
+}
+.hero-service__img {
   pointer-events: none;
 }
 @media (max-width: 1100px) {
@@ -836,6 +846,21 @@ body {
   font-size: 1.1rem;
 }
 
+.page-contact {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.page-contact main {
+  flex: 1;
+}
+.page-contact .headerMobile__nav-line {
+  background-color: #2A2A2A;
+}
+.page-contact .headerDesktop__nav-item--left a, .page-contact .headerDesktop__nav-item--right a {
+  color: #2A2A2A;
+}
+
 .contact-page {
   display: flex;
   justify-content: center;
@@ -930,6 +955,11 @@ body {
 }
 
 @media (min-width: 1440px) {
+  .page-contact .footerDesktop {
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+  }
   .contact-page {
     align-items: center;
   }
