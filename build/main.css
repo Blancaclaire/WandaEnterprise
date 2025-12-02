@@ -551,9 +551,6 @@ body {
 .black-button:hover {
   background-color: #fbc02d;
 }
-.black-button {
-  width: 40%;
-}
 
 .hero-service {
   position: relative;
@@ -563,8 +560,7 @@ body {
   background-image: url("../images/backgroudService.png");
   background-size: cover;
   background-position: center;
-  display: block;
-  width: 100%;
+  align-items: flex-start;
 }
 .hero-service__container {
   width: 75%;
@@ -574,31 +570,16 @@ body {
   display: flex;
   justify-content: flex-start;
 }
-@media (max-width: 768px) {
-  .hero-service__container {
-    width: 90%;
-    margin: 0 auto;
-  }
-}
 .hero-service__info-card {
-  float: left;
   background: rgba(44, 24, 24, 0.1);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   padding: 4rem 3rem;
+  margin: 5rem;
   border-radius: 25px;
   max-width: 500px;
   border: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
-}
-@media (max-width: 768px) {
-  .hero-service__info-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 2rem 1.5rem;
-    width: 100%;
-  }
 }
 .hero-service__title {
   font-family: "Inter", sans-serif;
@@ -607,12 +588,6 @@ body {
   margin-bottom: 1.5rem;
   color: #ffffff;
 }
-@media (max-width: 768px) {
-  .hero-service__title {
-    font-size: 2rem;
-    margin-top: 0;
-  }
-}
 .hero-service__description {
   font-family: "Nunito", sans-serif;
   font-size: 1.15rem;
@@ -620,14 +595,8 @@ body {
   margin-bottom: 2.5rem;
   color: #f0f0f0;
 }
-@media (max-width: 768px) {
-  .hero-service__description {
-    font-size: 12px;
-  }
-}
 .hero-service__img {
   position: absolute;
-  float: right;
   bottom: 0;
   right: 0;
   z-index: 10;
@@ -638,26 +607,7 @@ body {
   background-position: bottom right;
   width: 600px;
   height: 600px;
-}
-.hero-service__img img {
-  width: 20em;
-}
-.hero-service__img {
   pointer-events: none;
-}
-@media (max-width: 1100px) {
-  .hero-service__img {
-    width: 400px;
-    height: 400px;
-    margin-right: 4rem;
-  }
-}
-@media (max-width: 400px) {
-  .hero-service__img {
-    width: 300px;
-    height: 300px;
-    margin-right: 2rem;
-  }
 }
 
 .features {
@@ -677,14 +627,6 @@ body {
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   display: flex;
-}
-@media (max-width: 900px) {
-  .features__slider {
-    width: 95%;
-    height: auto;
-    min-height: 500px;
-    margin: 1.5rem 0;
-  }
 }
 .features .carousel-nav {
   position: absolute;
@@ -710,11 +652,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 900px) {
-  .features__card.active {
-    flex-direction: row;
-  }
-}
 .features__image-col, .features__text-col {
   flex: 1;
   padding: 3rem;
@@ -726,14 +663,6 @@ body {
   align-items: center;
   width: 50%;
 }
-@media (max-width: 900px) {
-  .features__image-col {
-    width: 100%;
-    height: auto;
-    flex: none;
-    padding: 2rem 1rem 1rem 1rem;
-  }
-}
 .features__img {
   width: auto;
   height: 500px;
@@ -741,25 +670,9 @@ body {
   border-radius: 20px;
   display: block;
 }
-@media (max-width: 900px) {
-  .features__img {
-    width: auto;
-    height: 300px;
-    max-width: 350px;
-    max-height: 300px;
-    border-radius: 20px;
-  }
-}
 .features__text-col {
   flex-direction: column;
   justify-content: center;
-}
-@media (max-width: 900px) {
-  .features__text-col {
-    height: fit-content;
-    width: fit-content;
-    justify-content: flex-start;
-  }
 }
 .features__title {
   font-family: "Inter", sans-serif;
@@ -768,22 +681,11 @@ body {
   margin-bottom: 1rem;
   font-weight: 800;
 }
-@media (max-width: 900px) {
-  .features__title {
-    font-size: 1rem;
-  }
-}
 .features__text {
   font-family: "Nunito", sans-serif;
   color: #1a1a1a;
   margin-bottom: 1.5rem;
   line-height: 1.6;
-}
-@media (max-width: 900px) {
-  .features__text {
-    font-size: 0.65rem;
-    line-height: 1.4;
-  }
 }
 .features__quote {
   font-family: "Nunito", sans-serif;
@@ -791,11 +693,6 @@ body {
   color: #666;
   border-left: 4px solid #fbc02d;
   padding-left: 1rem;
-}
-@media (max-width: 900px) {
-  .features__quote {
-    font-size: 0.7rem;
-  }
 }
 .features__pagination {
   transform: translateX(-50%);
@@ -825,12 +722,6 @@ body {
   grid-template-columns: 1fr;
   gap: 5rem;
 }
-@media (min-width: 900px) {
-  .info-grid__container {
-    grid-template-columns: 0.8fr 1.2fr;
-    align-items: start;
-  }
-}
 .info-grid__heading {
   font-family: "Inter", sans-serif;
   font-size: 2rem;
@@ -846,6 +737,85 @@ body {
   font-size: 1.1rem;
 }
 
+@media (max-width: 1100px) {
+  .hero-service__img {
+    width: 400px;
+    height: 400px;
+    margin-right: 4rem;
+  }
+}
+@media (min-width: 900px) {
+  .features__card.active {
+    flex-direction: row;
+  }
+  .info-grid__container {
+    grid-template-columns: 0.8fr 1.2fr;
+    align-items: start;
+  }
+}
+@media (max-width: 900px) {
+  .features__slider {
+    width: 95%;
+    height: auto;
+    min-height: 500px;
+    margin: 1.5rem 0;
+  }
+  .features__image-col {
+    width: 100%;
+    height: auto;
+    flex: none;
+    padding: 2rem 1rem 1rem 1rem;
+  }
+  .features__img {
+    width: auto;
+    height: 300px;
+    max-width: 350px;
+    max-height: 300px;
+    border-radius: 20px;
+  }
+  .features__text-col {
+    height: fit-content;
+    width: fit-content;
+    justify-content: flex-start;
+  }
+  .features__title {
+    font-size: 1rem;
+  }
+  .features__text {
+    font-size: 0.65rem;
+    line-height: 1.4;
+  }
+  .features__quote {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 768px) {
+  .hero-service__container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .hero-service__info-card {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2rem 1.5rem;
+  }
+  .hero-service__title {
+    font-size: 2rem;
+    margin-top: 0;
+  }
+  .hero-service__description {
+    font-size: 12px;
+  }
+}
+@media (max-width: 400px) {
+  .hero-service__img {
+    width: 300px;
+    height: 300px;
+    margin-right: 2rem;
+  }
+}
 .page-contact {
   min-height: 100vh;
   display: flex;
