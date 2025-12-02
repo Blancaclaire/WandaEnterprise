@@ -152,7 +152,7 @@ header {
     border: none;
     cursor: pointer;
     background-color: #fbc02d;
-    color: #ffffff;
+    color: #353535;
     padding: 10px 25px;
     border-radius: 50px;
     font-weight: bold;
@@ -162,7 +162,7 @@ header {
     transform: scale(1.07);
   }
   .headerDesktop__nav-item--right:last-child a:hover {
-    color: #353535;
+    color: white;
   }
 }
 .footer {
@@ -434,11 +434,11 @@ body {
 }
 .faq__answer-content {
   padding-bottom: 0.75rem;
-  color: #171717;
+  color: #2A2A2A;
   font-size: 0.9rem;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   .hero__bt {
     margin-top: 1vh;
   }
@@ -754,7 +754,7 @@ body {
 .features__title {
   font-family: "Inter", sans-serif;
   font-size: 2rem;
-  color: #171717;
+  color: #2A2A2A;
   margin-bottom: 1rem;
   font-weight: 800;
 }
@@ -834,5 +834,124 @@ body {
   line-height: 1.7;
   margin-bottom: 2rem;
   font-size: 1.1rem;
+}
+
+.contact-page {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+}
+.contact-page__container {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.intro__title {
+  font-family: "Inter", sans-serif;
+  font-size: 8vh;
+  line-height: 1.1;
+  color: #2A2A2A;
+  margin-bottom: 1rem;
+}
+.intro__subtitle {
+  font-size: 0.9rem;
+  color: #2A2A2A;
+  font-weight: 400;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.form-card {
+  background-color: #FFFFFF;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+.form-card__group {
+  margin-bottom: 1.25rem;
+}
+.form-card__label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #2A2A2A;
+}
+.form-card__input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #c0bbb8;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+.form-card__input::placeholder {
+  color: #C0C0C0;
+}
+.form-card__input:focus {
+  outline: none;
+  border-color: #999593;
+}
+.form-card__input--textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+.form-card__actions {
+  margin-top: 2rem;
+}
+.form-card__button {
+  border: none;
+  cursor: pointer;
+  background-color: #353535;
+  color: #ffffff;
+  padding: 10px 25px;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+.form-card__button:hover {
+  transform: scale(1.07);
+}
+.form-card__button:hover {
+  background-color: black;
+}
+.form-card__button {
+  width: 100%;
+  font-size: 1rem;
+}
+
+@media (min-width: 1440px) {
+  .contact-page {
+    align-items: center;
+  }
+  .contact-page__container {
+    max-width: 1200px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+  }
+  .intro {
+    text-align: left;
+    flex: 1;
+    margin-bottom: 0;
+  }
+  .intro__subtitle {
+    max-width: 100%;
+  }
+  .form-card {
+    width: 600px;
+    min-width: 600px;
+    padding: 2.5rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
