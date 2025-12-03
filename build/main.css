@@ -24,6 +24,12 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+.main-header__logo {
+  transition: transform 0.3s ease;
+}
+.main-header__logo:hover {
+  transform: scale(1.07);
+}
 .main-header__logo-reduced {
   width: 2.5em;
   transition: width 0.3s ease;
@@ -166,9 +172,6 @@
   }
   .main-header {
     height: 100px;
-  }
-  .main-header__logo img {
-    width: 160px;
   }
 }
 .footer {
@@ -857,10 +860,6 @@ body {
   font-size: 1.1rem;
 }
 
-.page-contact main {
-  padding-top: 0.5em;
-}
-
 .contact-page {
   display: flex;
   justify-content: center;
@@ -877,7 +876,7 @@ body {
 
 .intro {
   text-align: center;
-  margin-bottom: rem;
+  margin-bottom: 0rem;
 }
 .intro__title {
   font-family: "Inter", sans-serif;

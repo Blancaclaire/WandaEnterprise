@@ -22,6 +22,7 @@
     }
 
     &__logo {
+        @include scale-efect();
 
         &-reduced {
             width: 2.5em;
@@ -140,6 +141,7 @@
                 transition: width 0.3s ease;
                 display: block;
                 margin-right: 3rem;
+
             }
 
         }
@@ -193,10 +195,5 @@
     .main-header {
         height: 100px;
 
-        &__logo img {
-            width: 160px;
-        }
     }
 }
-
-
