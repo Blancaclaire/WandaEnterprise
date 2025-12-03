@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servicios - Wanda</title>
+  <link rel="stylesheet" href="./build/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body class="page-services">
+      <header class="main-header">
+    <div class="main-header__container">
+      
+      <div class="main-header__logo">
+        <a href="./index.html">
+          <img class="main-header__logo-reduced"src="./images/LogoReducido.png" alt="Wanda Logo" />
+          <img class="main-header__logo-principal"src="./images/LogoPrincipal.png" alt="Wanda Logo" />
+        </a>
+      </div>
+
+      <nav class="main-header__nav">
+        
+        <button class="nav-toggle" aria-label="Abrir menú">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+
+        <ul class="nav-list">
+          <li><a href="./services.html">Servicios</a></li>
+          <li><a href="#Sobre Nosotros">Sobre Nosotros</a></li>
+          <li><a href="./contact.html">Contacto</a></li>
+          <li class="push-right"><a href="#InicioSesión">Inicio Sesión</a></li>
+          <li><a href="#Registro" class="btn-highlight">Registro</a></li>
+        </ul>
+
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="hero-service">
+      <div class="hero-service__container">
+        <div class="hero-service__info-card">
+          <h1 class="hero-service__title">¿Qué es Wanda?</h1>
+          <p class="hero-service__description">
+            WANDA es una aplicación web diseñada para ayudarte a gestionar tu
+            economía personal de forma sencilla y visual. Controla tus gastos,
+            planifica tu ahorro y organiza tus finanzas diarias sin
+            complicaciones.
+          </p>
+          <button class="black-button">Empieza</button>
+        </div>
+
+      </div>
+      <div class="hero-service__img">
+      </div>
+
+    </section>
+
+    <section class="features">
+      <div class="features__slider">
+        <div class="carousel-nav carousel-nav--left" onclick="prevSlide()"></div>
+        <div class="carousel-nav carousel-nav--right" onclick="nextSlide()"></div>
+
+        <div class="features__card active" data-slide="0">
+          <div class="features__image-col">
+            <img src="./images/imagenMovil.png" alt="Organización" class="features__img" />
+          </div>
+          <div class="features__text-col">
+            <h2 class="features__title">Gastos claros y ordenados</h2>
+            <p class="features__text">
+              Permite registrar y clasificar todos tus gastos diarios y fijos
+              de forma intuitiva. Cada gasto se asigna a una categoría
+              personalizable, para que tengas una visión clara de dónde se va
+              tu dinero.
+            </p>
+            <p class="features__quote">
+              "Si cada mes pagas alquiler, transporte y compras del
+              supermercado, WANDA te muestra automáticamente cuánto gastas en
+              cada categoría y cómo cambia tu consumo con el tiempo."
+            </p>
+          </div>
+        </div>
+
+        <div class="features__card" data-slide="1">
+          <div class="features__image-col">
+            <img src="./images/imagenPortatil.png" alt="Balances" class="features__img" />
+          </div>
+          <div class="features__text-col">
+            <h2 class="features__title">Balances al instante</h2>
+            <p class="features__text">
+              Visualiza tus ingresos y egresos en tiempo real con gráficas
+              fáciles de entender.
+            </p>
+            <p class="features__quote">
+              "Toma el control de tu futuro financiero hoy mismo."
+            </p>
+          </div>
+        </div>
+
+        <div class="features__card" data-slide="2">
+          <div class="features__image-col">
+            <img src="./images/imagenPareja.png" alt="Compartido" class="features__img" />
+          </div>
+          <div class="features__text-col">
+            <h2 class="features__title">Cuentas compartidas</h2>
+            <p class="features__text">
+              Ideal para parejas o compañeros de piso. Gestiona gastos comunes
+              sin peleas.
+            </p>
+            <p class="features__quote">
+              "La transparencia hace que la convivencia sea mejor."
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="features__pagination">
+        <span class="features__dot active" onclick="currentSlide(0)"></span>
+        <span class="features__dot" onclick="currentSlide(1)"></span>
+        <span class="features__dot" onclick="currentSlide(2)"></span>
+      </div>
+    </section>
+
+    <section class="info-grid">
+      <div class="info-grid__container">
+        <div class="info-grid__col-title">
+          <h2 class="info-grid__heading">
+            Todo lo que necesitas para gestionar tu dinero en un solo lugar
+          </h2>
+        </div>
+        <div class="info-grid__col-text">
+          <p class="info-grid__paragraph">
+            WANDA reúne todas las herramientas necesarias para llevar el
+            control de tu economía personal. Desde registrar gastos y crear
+            presupuestos, hasta fijar objetivos de ahorro y gestionar cuentas
+            compartidas, todo está pensado para que tengas una visión clara y
+            completa de tu dinero sin complicaciones.
+          </p>
+          <p class="info-grid__paragraph">
+            Con WANDA, no necesitas varias aplicaciones: aquí encontrarás todo
+            lo que necesitas para organizar, controlar y optimizar tus
+            finanzas.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer footerDesktop">
+    <div class="footerDesktop__logo">
+      <a href="./index.html"><img src="./images/LogoPrincipal.png" alt="Wanda" class="footerDesktop__logo-img" /></a>
+    </div>
+    <nav class="footerDesktop__nav">
+      <ul class="footerDesktop__nav-list">
+        <li class="footerDesktop__item">
+          <a href="#" class="footerDesktop__item-link">Sobre Nosotros</a>
+        </li>
+        <li class="footerDesktop__item">
+          <a href="#" class="footerDesktop__item-link">Registro</a>
+        </li>
+        <li class="footerDesktop__item">
+          <a href="#" class="footerDesktop__item-link">Contacta</a>
+        </li>
+        <li class="footerDesktop__item">
+          <a href="#" class="footerDesktop__item-link">Aviso Legal</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="footerDesktop__social">
+      <a href="#" class="footerDesktop__social-link footerDesktop__social-link--facebook" aria-label="Facebook"></a>
+      <a href="#" class="footerDesktop__social-link footerDesktop__social-link--tiktok" aria-label="TikTok"></a>
+      <a href="#" class="footerDesktop__social-link footerDesktop__social-link--instagram" aria-label="Instagram"></a>
+      <a href="#" class="footerDesktop__social-link footerDesktop__social-link--linkedin" aria-label="LinkedIn"></a>
+    </div>
+  </footer>
+
+  <script src="./js/services.js"></script>
+  <script src="./js/home.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./build/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body class="page-contact">
+
+    <header class="main-header">
+        <div class="main-header__container">
+
+            <div class="main-header__logo">
+                <a href="./index.html">
+                    <img class="main-header__logo-reduced" src="./images/OscuroReducido.png" alt="Wanda Logo" />
+                    <img class="main-header__logo-principal" src="./images/OscuroPrincipal.png" alt="Wanda Logo" />
+                </a>
+            </div>
+
+            <nav class="main-header__nav">
+
+                <button class="nav-toggle" aria-label="Abrir menú">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+
+                <ul class="nav-list">
+                    <li><a href="./services.html">Servicios</a></li>
+                    <li><a href="#Sobre Nosotros">Sobre Nosotros</a></li>
+                    <li><a href="./contact.html">Contacto</a></li>
+                    <li class="push-right"><a href="#InicioSesión">Inicio Sesión</a></li>
+                    <li><a href="#Registro" class="btn-highlight">Registro</a></li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="contact-page">
+
+            <div class="contact-page__container">
+
+                <section class="intro">
+                    <h1 class="intro__title">
+                        Tu opinión <br> nos importa
+                    </h1>
+                    <p class="intro__subtitle">
+                        Comparte tus ideas y preguntas con nuestro equipo.
+                        Comparte tus ideas y preguntas con nuestro equipo.
+                    </p>
+                </section>
+
+                <form class="form-card">
+
+                    <div class="form-card__group">
+                        <label for="name" class="form-card__label">Nombre</label>
+                        <input type="text" id="name" name="name" class="form-card__input" placeholder="Valor">
+                    </div>
+
+                    <div class="form-card__group">
+                        <label for="surname" class="form-card__label">Apellido</label>
+                        <input type="text" id="surname" name="surname" class="form-card__input " placeholder="Valor">
+                    </div>
+
+                    <div class="form-card__group">
+                        <label for="email" class="form-card__label">Email</label>
+                        <input type="email" id="email" name="email" class="form-card__input" placeholder="Valor">
+                    </div>
+
+                    <div class="form-card__group">
+                        <label for="message" class="form-card__label">Mensaje</label>
+                        <textarea id="message" name="message" class="form-card__input form-card__input--textarea"
+                            placeholder="Valor"></textarea>
+                    </div>
+
+                    <div class="form-card__actions">
+                        <button type="submit" class="form-card__button">Enviar</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer footerDesktop">
+        <div class="footerDesktop__logo">
+            <a href="./index.html">
+                <img src="./images/LogoPrincipal.png" alt="Wanda" class="footerDesktop__logo-img" />
+            </a>
+        </div>
+        <nav class="footerDesktop__nav">
+            <ul class="footerDesktop__nav-list">
+                <li class="footerDesktop__item">
+                    <a href="#" class="footerDesktop__item-link">Sobre Nosotros</a>
+                </li>
+                <li class="footerDesktop__item">
+                    <a href="#" class="footerDesktop__item-link">Registro</a>
+                </li>
+                <li class="footerDesktop__item">
+                    <a href="./contact.html" class="footerDesktop__item-link">Contacta</a>
+                </li>
+                <li class="footerDesktop__item">
+                    <a href="#" class="footerDesktop__item-link">Aviso Legal</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="footerDesktop__social">
+            <a href="#" class="footerDesktop__social-link footerDesktop__social-link--facebook" aria-label="Facebook">
+            </a>
+            <a href="#" class="footerDesktop__social-link footerDesktop__social-link--tiktok" aria-label="TikTok">
+            </a>
+            <a href="#" class="footerDesktop__social-link footerDesktop__social-link--instagram" aria-label="Instagram">
+            </a>
+            <a href="#" class="footerDesktop__social-link footerDesktop__social-link--linkedin" aria-label="LinkedIn">
+            </a>
+        </div>
+    </footer>
+
+    <script src="./js/home.js"></script>
+</body>
+
+</html>
