@@ -571,7 +571,6 @@ body {
 
 .hero-service {
   position: relative;
-  margin-top: -100px;
   padding-top: 100px;
   min-height: 100vh;
   background-image: url("../images/backgroudService.png");
@@ -583,14 +582,15 @@ body {
 .hero-service__container {
   width: 75%;
   max-width: 900px;
-  margin: 2rem;
+  margin: 5rem 0 0 10rem;
   padding: 0 1rem;
   display: flex;
   justify-content: flex-start;
 }
 @media (max-width: 768px) {
   .hero-service__container {
-    width: 90%;
+    width: 100%;
+    justify-content: center;
     margin: 0 auto;
   }
 }
@@ -604,14 +604,16 @@ body {
   max-width: 500px;
   border: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+  height: 80vh;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .hero-service__info-card {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     padding: 2rem 1.5rem;
     width: 100%;
+    height: auto;
   }
 }
 .hero-service__title {
@@ -645,7 +647,7 @@ body {
   bottom: 0;
   right: 0;
   z-index: 10;
-  margin-right: 7rem;
+  margin-right: 15rem;
   background-image: url("../images/personas.png");
   background-size: contain;
   background-repeat: no-repeat;
