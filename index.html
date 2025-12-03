@@ -21,72 +21,36 @@
   </head>
 
   <body>
-    <header class="header headerMobile">
-      <div class="headerMobile__logo">
+
+    <header class="main-header">
+    <div class="main-header__container">
+      
+      <div class="main-header__logo">
         <a href="./index.html">
-          <img
-            class="headerMobile__logo--reduced"
-            src="./images/LogoReducido.png"
-            alt="Logo Reducido"
-        /></a>
+          <img class="main-header__logo-reduced"src="./images/LogoReducido.png" alt="Wanda Logo" />
+          <img class="main-header__logo-principal"src="./images/LogoPrincipal.png" alt="Wanda Logo" />
+        </a>
       </div>
-      <div class="headerMobile__nav">
-        <button class="headerMobile__nav-button">
-          <span class="headerMobile__nav-line"></span>
-          <span class="headerMobile__nav-line"></span>
-          <span class="headerMobile__nav-line"></span>
+
+      <nav class="main-header__nav">
+        
+        <button class="nav-toggle" aria-label="Abrir menú">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
         </button>
-        <nav class="headerMobile__nav-menu header__nav-menu--hidden">
-          <ul class="headerMobile__nav-list">
-            <li class="headerMobile__nav-item">
-              <a href="./services.html">Servicios</a>
-            </li>
-            <li class="headerMobile__nav-item">
-              <a href="#Sobre Nosotros">Sobre Nosotros</a>
-            </li>
-            <li class="headerMobile__nav-item">
-              <a href="#Contacto">Contacto</a>
-            </li>
-            <li class="headerMobile__nav-item">
-              <a href="#InicioSesión">Inicio Sesión</a>
-            </li>
-            <li class="headerMobile__nav-item">
-              <a href="#Registro">Registro</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
 
-    <header class="header headerDesktop">
-      <div class="headerDesktop__logo">
-        <img
-          class="headerDesktop__logo--principal"
-          src="./images/LogoPrincipal.png"
-          alt="Logo Principal"
-        />
-      </div>
-
-      <nav class="headerDesktop__nav">
-        <ul class="headerDesktop__nav-list">
-          <li class="headerDesktop__nav-item--left">
-            <a href="./services.html">Servicios</a>
-          </li>
-          <li class="headerDesktop__nav-item--left">
-            <a href="#Sobre Nosotros">Sobre Nosotros</a>
-          </li>
-          <li class="headerDesktop__nav-item--left">
-            <a href="./contact.html">Contacto</a>
-          </li>
-          <li class="headerDesktop__nav-item--right">
-            <a href="#InicioSesión">Inicio Sesión</a>
-          </li>
-          <li class="headerDesktop__nav-item--right">
-            <a href="#Registro">Registro</a>
-          </li>
+        <ul class="nav-list">
+          <li><a href="./services.html">Servicios</a></li>
+          <li><a href="#Sobre Nosotros">Sobre Nosotros</a></li>
+          <li><a href="./contact.html">Contacto</a></li>
+          <li class="push-right"><a href="#InicioSesión">Inicio Sesión</a></li>
+          <li><a href="#Registro" class="btn-highlight">Registro</a></li>
         </ul>
+
       </nav>
-    </header>
+    </div>
+  </header>
 
     <main class="main-container">
       <section class="hero" id="hero">

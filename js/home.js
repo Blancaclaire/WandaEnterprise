@@ -1,13 +1,16 @@
-//Funcion para abrir y cerrar nav
-const button = document.querySelector(".headerMobile__nav-button");
-const menu = document.querySelector(".headerMobile__nav-menu");
 
-button.addEventListener("click", () => {
-  if (menu.style.display === "block") {
-    menu.style.display = "none";
-  } else {
-    menu.style.display = "block";
-  }
+document.addEventListener('DOMContentLoaded', () => {
+    const btnMenu = document.querySelector('.nav-toggle'); 
+    const navMenu = document.querySelector('.nav-list');   
+
+    // Escuchamos el evento click
+    btnMenu.addEventListener('click', () => {
+        // Alternamos (añadir/quitar) la clase 'active'
+        navMenu.classList.toggle('active');
+        
+        // Opcional: Cambiar el icono o animar las líneas si quieres luego
+        btnMenu.classList.toggle('open'); 
+    });
 });
 
 //Funcion para abrir y cerrar seccion preguntas frecuentes

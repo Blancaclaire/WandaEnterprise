@@ -2,26 +2,10 @@
 @use '../base/mixins' as *;
 @use '../components/buttons.scss' as *;
 
-
 .page-contact {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 
-    main{
-        flex: 1;
-    }
-
-    .headerMobile__nav-line {
-        background-color: $color-text--dk;
-    }
-
-    .headerDesktop__nav {
-
-        &-item--left a,
-        &-item--right a {
-            color: $color-text--dk;
-        }
+    main {
+        padding-top: 0.5em;
     }
 }
 
@@ -30,18 +14,20 @@
     justify-content: center;
     padding: 2rem 1.5rem;
 
+
     &__container {
         width: 100%;
         max-width: 400px;
         display: flex;
         flex-direction: column;
         gap: 2rem;
+        margin-top: 5em;
     }
 }
 
 .intro {
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: rem;
 
     &__title {
         font-family: $font-titles ;
@@ -120,10 +106,17 @@
 @media (min-width: $desktop-breakpoint) {
 
     .page-contact {
+
+        main {
+            padding-top: 3em;
+        }
+    }
+
+    .page-contact {
         .footerDesktop {
             flex-direction: row;
             justify-content: center;
-            gap:4rem;
+            gap: 4rem;
         }
     }
 
@@ -140,6 +133,7 @@
     }
 
     .intro {
+
         text-align: left;
         flex: 1;
         margin-bottom: 0;
@@ -155,4 +149,21 @@
         padding: 2.5rem;
 
     }
+
+
+    .page-contact {
+
+    .nav-toggle .hamburger-line {
+        background-color: $color-text--dk ;
+    }
+
+    .nav-list li a {
+        color: $color-text--dk ;
+
+        &:hover {
+            color: $color-text-gray ; 
+        }
+    }
+
+}
 }
