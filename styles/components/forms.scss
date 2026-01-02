@@ -1,13 +1,7 @@
-// _forms.scss
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+@use "../components/buttons" as *;
 
-// 1. Variables (pueden ir en un archivo _vars.scss aparte)
-$form-input-bg: #ffffff;
-$form-input-radius: 8px;
-$form-icon-color: #a0a0a0;
-$form-spacing: 1rem;
-$form-max-width: 600px;
-
-// 2. Bloque Principal del Grupo
 .form-group {
     margin-bottom: $form-spacing;
     width: 100%;
@@ -23,11 +17,10 @@ $form-max-width: 600px;
         margin: 2rem 0;
 
         &:focus-within {
-            border-color: #6a5acd; // Color de énfasis al escribir
+            border-color: #6a5acd; 
         }
     }
 
-    // Elemento Icono
     &__icon {
         display: flex;
         align-items: center;
@@ -40,13 +33,12 @@ $form-max-width: 600px;
         svg {
             width: 100%;
             height: auto;
-            fill: currentColor; // Permite que el color se herede de __icon
+            fill: currentColor; 
         }
     }
 
-    // Elemento Input
     &__input {
-        flex: 1; // Toma todo el espacio restante
+        flex: 1; 
         border: none;
         background: transparent;
         padding: 0.6rem 0;
@@ -72,5 +64,27 @@ $form-max-width: 600px;
         &:hover{
             color: #000;
         }
+    }
+
+    &__checkbox{
+
+        &-container{
+            display: block;
+        }
+
+        &-text{
+            color:  white;
+            font-size: 0.95em;
+        }
+
+        &-link{
+            text-decoration: none;
+            transition: transform 0.4s ease;
+
+            &:hover{
+                @include scale-efect();
+            }
+        }
+        
     }
 }
