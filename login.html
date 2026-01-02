@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./build/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body class="login">
+
+    <header class="main-header">
+        <div class="main-header__container">
+
+            <div class="main-header__logo">
+                <a href="./index.html">
+                    <img class="main-header__logo-reduced" src="./images/LogoReducido.png" alt="Wanda Logo" />
+                    <img class="main-header__logo-principal" src="./images/LogoPrincipal.png" alt="Wanda Logo" />
+                </a>
+            </div>
+
+            <nav class="main-header__nav">
+
+                <button class="nav-toggle" aria-label="Abrir menú">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+
+                <ul class="nav-list">
+                    <li><a href="./services.html">Servicios</a></li>
+                    <li><a href="#Sobre Nosotros">Sobre Nosotros</a></li>
+                    <li><a href="./contact.html">Contacto</a></li>
+                    <li class="push-right"><a href="./login.html">Inicio Sesión</a></li>
+                    <li><a href="#Registro" class="btn-highlight">Registro</a></li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="card">
+            <header class="card__header">
+                <h3 class="card__subtitle">¡ Bienvenido de nuevo !</h3>
+                <h2 class="card__title">Accede a tu cuenta</h2>
+            </header>
+
+            <form class="auth-form">
+                <div class="form-group">
+                    <div class="form-group__field">
+                        <span class="form-group__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                aria-hidden="true">
+                                <path
+                                    d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                            </svg>
+                        </span>
+                        <input type="email" class="form-group__input" placeholder="Usuario o email" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-group__field" style="position: relative;"> <span class="form-group__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                aria-hidden="true">
+                                <path
+                                    d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z" />
+                            </svg>
+                        </span>
+
+                        <input type="password" id="password-input" class="form-group__input" placeholder="Contraseña"
+                            required>
+
+                        <button type="button" id="toggle-password" class="form-group__toggle-btn">
+                            <svg id="eye-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-primary">Enviar</button>
+            </form>
+        </section>
+
+        <section class="bottom">
+            <p class="bottom__question">¿No tienes una cuenta?</p>
+            <a href="#SignUp" class="bottom__link">Regístrate</a>
+        </section>
+    </main>
+
+
+</body>
+
+<script src="./js/home.js"></script>
+
+</html>

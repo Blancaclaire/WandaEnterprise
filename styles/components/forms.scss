@@ -1,0 +1,76 @@
+// _forms.scss
+
+// 1. Variables (pueden ir en un archivo _vars.scss aparte)
+$form-input-bg: #ffffff;
+$form-input-radius: 8px;
+$form-icon-color: #a0a0a0;
+$form-spacing: 1rem;
+
+// 2. Bloque Principal del Grupo
+.form-group {
+    margin-bottom: $form-spacing;
+    width: 100%;
+
+
+
+    &__field {
+        display: flex;
+        align-items: center;
+        background-color: $form-input-bg;
+        border-radius: $form-input-radius;
+        padding: 0 1rem;
+        border: 1px solid transparent;
+        transition: border-color 0.3s ease;
+        margin: 2rem 0;
+
+        &:focus-within {
+            border-color: #6a5acd; // Color de énfasis al escribir
+        }
+    }
+
+    // Elemento Icono
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        color: $form-icon-color;
+        margin-right: 0.8rem;
+
+        svg {
+            width: 100%;
+            height: auto;
+            fill: currentColor; // Permite que el color se herede de __icon
+        }
+    }
+
+    // Elemento Input
+    &__input {
+        flex: 1; // Toma todo el espacio restante
+        border: none;
+        background: transparent;
+        padding: 0.6rem 0;
+        font-size: 1rem;
+        outline: none;
+
+    }
+
+    &__toggle-btn {
+        position: absolute;
+        right: 12px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #666;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: color 0.3s;
+
+        &:hover{
+            color: #000;
+        }
+    }
+}
