@@ -75,7 +75,7 @@ h1, h2, h3, h4 {
   font-size: 0.95em;
 }
 .form-group__checkbox-link {
-  text-decoration: none;
+  color: white;
   transition: transform 0.4s ease;
 }
 .form-group__checkbox-link:hover {
