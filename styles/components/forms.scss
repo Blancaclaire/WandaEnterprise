@@ -5,13 +5,12 @@ $form-input-bg: #ffffff;
 $form-input-radius: 8px;
 $form-icon-color: #a0a0a0;
 $form-spacing: 1rem;
+$form-max-width: 600px;
 
 // 2. Bloque Principal del Grupo
 .form-group {
     margin-bottom: $form-spacing;
     width: 100%;
-
-
 
     &__field {
         display: flex;
@@ -53,6 +52,7 @@ $form-spacing: 1rem;
         padding: 0.6rem 0;
         font-size: 1rem;
         outline: none;
+        
 
     }
 

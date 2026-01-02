@@ -1063,6 +1063,9 @@ body {
 
 .card {
   margin-top: 25vh;
+  max-width: 50em;
+  margin-left: auto;
+  margin-right: auto;
 }
 .card__header {
   color: white;
